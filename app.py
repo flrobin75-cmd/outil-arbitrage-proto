@@ -172,15 +172,18 @@ with tab1:
     ))
 
     fig.update_layout(
-        title="Net dirigeant après fiscalité par stratégie",
-        xaxis_title=None,
-        yaxis_title="Net dirigeant annuel (€)",
-        showlegend=False,
-        height=420,
-        margin=dict(t=60, b=40, l=60, r=20),
-        plot_bgcolor="white",
-        yaxis=dict(gridcolor="#E5E7EB", tickformat=",.0f"),
-    )
+    title="Net dirigeant après fiscalité par stratégie",
+    xaxis_title=None,
+    yaxis_title="Net dirigeant annuel (€)",
+    showlegend=False,
+    height=420,
+    margin=dict(t=60, b=40, l=60, r=20),
+    template="plotly_dark",
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    yaxis=dict(gridcolor="#2A2D34", tickformat=",.0f"),
+    font=dict(color="#E5E7EB"),
+)
     st.plotly_chart(fig, use_container_width=True)
 
     # Tableau de synthèse
@@ -242,8 +245,12 @@ with tab2:
         hovertemplate="<b>%{label}</b><br>%{value:,.0f} €<extra></extra>",
     ), row=1, col=2)
 
-    fig2.update_layout(height=420, margin=dict(t=60, b=20, l=20, r=20),
-                       showlegend=False)
+fig2.update_layout(height=420, margin=dict(t=60, b=20, l=20, r=20),
+                   showlegend=False,
+                   template="plotly_dark",
+                   paper_bgcolor="rgba(0,0,0,0)",
+                   plot_bgcolor="rgba(0,0,0,0)",
+                   font=dict(color="#E5E7EB"))
     st.plotly_chart(fig2, use_container_width=True)
 
     # Waterfall coût → net
@@ -264,8 +271,11 @@ with tab2:
         totals={"marker": {"color": "#60A5FA"}},
     ))
     fig3.update_layout(height=360, margin=dict(t=40, b=40, l=60, r=20),
-                       plot_bgcolor="white",
-                       yaxis=dict(gridcolor="#E5E7EB", tickformat=",.0f"))
+                   template="plotly_dark",
+                   paper_bgcolor="rgba(0,0,0,0)",
+                   plot_bgcolor="rgba(0,0,0,0)",
+                   yaxis=dict(gridcolor="#2A2D34", tickformat=",.0f"),
+                   font=dict(color="#E5E7EB"))
     st.plotly_chart(fig3, use_container_width=True)
 
 # --- TAB 3 : Projection patrimoine 5 ans ---
@@ -294,15 +304,18 @@ with tab3:
         hovertemplate="Année %{x}<br>%{y:,.0f} €<extra></extra>",
     ))
     fig4.update_layout(
-        title=f"Patrimoine net cumulé sur 5 ans (rendements : cash 2 %, épargne 4 %)",
-        xaxis_title="Année",
-        yaxis_title="Patrimoine cumulé (€)",
-        height=440,
-        margin=dict(t=60, b=40, l=60, r=20),
-        plot_bgcolor="white",
-        yaxis=dict(gridcolor="#E5E7EB", tickformat=",.0f"),
-        legend=dict(yanchor="top", y=0.98, xanchor="left", x=0.02),
-    )
+    title=f"Patrimoine net cumulé sur 5 ans (rendements : cash 2 %, épargne 4 %)",
+    xaxis_title="Année",
+    yaxis_title="Patrimoine cumulé (€)",
+    height=440,
+    margin=dict(t=60, b=40, l=60, r=20),
+    template="plotly_dark",
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    yaxis=dict(gridcolor="#2A2D34", tickformat=",.0f"),
+    font=dict(color="#E5E7EB"),
+    legend=dict(yanchor="top", y=0.98, xanchor="left", x=0.02),
+)
     st.plotly_chart(fig4, use_container_width=True)
 
     ecart_5_ans = proj_reco[-1] - proj_a[-1]
