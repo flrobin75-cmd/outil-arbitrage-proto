@@ -1,6 +1,8 @@
+# Trigger redeploy 2026-05-22
 streamlit>=1.32
 pandas>=2.0
 plotly>=5.18
 reportlab>=4.0
 pdfplumber>=0.10
 openpyxl>=3.1
+
