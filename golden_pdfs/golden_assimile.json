@@ -1,0 +1,113 @@
+{
+  "spec_golden_version": "1.0.0",
+  "regime": "Assimilé",
+  "audit_pdf_spec_version": "1.0.0",
+  "baseline_hash": "8863991f27f67847",
+  "kpis": {
+    "etapes_total": 70,
+    "sous_traces_total": 5,
+    "doctrine_refs_distinctes": 15,
+    "hypotheses_total": 108
+  },
+  "codes_etapes_racines": [
+    "ASSIM_TX_IR_MOY_ABATTEMENT",
+    "ASSIM_TX_IR_MOY_BRUT_REF",
+    "ASSIM_TX_IR_MOY_COTIS_SALARIALES",
+    "ASSIM_TX_IR_MOY_CSG_CRDS",
+    "ASSIM_TX_IR_MOY_CSG_DEDUCTIBLE",
+    "ASSIM_TX_IR_MOY_NET_AVANT_IR",
+    "ASSIM_TX_IR_MOY_RESULTAT",
+    "ASSIM_TX_IR_MOY_REV_IMP_FOYER",
+    "ASSIM_TX_IR_MOY_REV_IMP_NET",
+    "ASSIM_TX_IR_MOY_REV_SAL_IMP",
+    "ASSIM_TX_IR_MOY_TOTAL_IMPOTS",
+    "STRAT_ASSIM_A_ALLOCATION",
+    "STRAT_ASSIM_A_EFFICACITE",
+    "STRAT_ASSIM_A_ENVELOPPE",
+    "STRAT_ASSIM_A_NET_DIVIDENDES",
+    "STRAT_ASSIM_A_NET_EPARGNE",
+    "STRAT_ASSIM_A_NET_PERIPHERIQUES",
+    "STRAT_ASSIM_A_NET_SALAIRE",
+    "STRAT_ASSIM_A_TOTAL_NET",
+    "STRAT_ASSIM_A_TX_IR_MOY_APPLIQUE",
+    "STRAT_ASSIM_B_ALLOCATION",
+    "STRAT_ASSIM_B_EFFICACITE",
+    "STRAT_ASSIM_B_ENVELOPPE",
+    "STRAT_ASSIM_B_NET_DIVIDENDES",
+    "STRAT_ASSIM_B_NET_EPARGNE",
+    "STRAT_ASSIM_B_NET_PERIPHERIQUES",
+    "STRAT_ASSIM_B_NET_SALAIRE",
+    "STRAT_ASSIM_B_TOTAL_NET",
+    "STRAT_ASSIM_B_TX_IR_MOY_APPLIQUE",
+    "STRAT_ASSIM_COMPARE_AB",
+    "STRAT_ASSIM_CRITERE_RETENU",
+    "STRAT_ASSIM_C_ALLOCATION",
+    "STRAT_ASSIM_C_EFFICACITE",
+    "STRAT_ASSIM_C_ENVELOPPE",
+    "STRAT_ASSIM_C_NET_DIVIDENDES",
+    "STRAT_ASSIM_C_NET_EPARGNE",
+    "STRAT_ASSIM_C_NET_PERIPHERIQUES",
+    "STRAT_ASSIM_C_NET_SALAIRE",
+    "STRAT_ASSIM_C_TOTAL_NET",
+    "STRAT_ASSIM_C_TX_IR_MOY_APPLIQUE",
+    "STRAT_ASSIM_D_ALLOCATION",
+    "STRAT_ASSIM_D_EFFICACITE",
+    "STRAT_ASSIM_D_ENVELOPPE",
+    "STRAT_ASSIM_D_NET_DIVIDENDES",
+    "STRAT_ASSIM_D_NET_EPARGNE",
+    "STRAT_ASSIM_D_NET_PERIPHERIQUES",
+    "STRAT_ASSIM_D_NET_SALAIRE",
+    "STRAT_ASSIM_D_TOTAL_NET",
+    "STRAT_ASSIM_D_TX_IR_MOY_APPLIQUE",
+    "STRAT_ASSIM_RETENU",
+    "STRAT_ASSIM_TX_IR_MOY_RACINE"
+  ],
+  "signets": [
+    {
+      "niveau": 0,
+      "titre": "Étapes du calcul (niveau racine — Assimilé)"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « tx_ir_moy » — Régime Assimilé (TX_IR_MOY)"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_A » — Régime Stratégie Assimilé/A"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_B » — Régime Stratégie Assimilé/B"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_C » — Régime Stratégie Assimilé/C"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_D » — Régime Stratégie Assimilé/D"
+    }
+  ],
+  "nb_pages": 13,
+  "texte_par_page": [
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nAudit MODE_AUDIT\nRestitution structurée de la trace de calcul — Régime Assimilé\nIdentification de la mission\nCabinet : Cabinet TestCo\nClient : M. Dupont\nExpert-comptable : Mme Martin\nDate d'édition : <DATE>\nNiveau de confiance : Avancé\nTraçabilité doctrinale et technique\nDoctrine appliquée : v1.0.1 (figement <DATE>)\nSpec MODE_AUDIT (graphe) : v1.1.0\nSpec PDF audit (renderer) : v1.0.0\nHash baseline : 8863991f27f67847\nProfil tracé\nProfil par défaut (SAS, marié 2p, IS 200k)\nIndicateurs de couverture de l'audit\nÉtapes tracées Sous-traces\n70 5\nRéférences doctrinales Hypothèses\n15 108\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 1 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSommaire\nCette restitution structurée reproduit le graphe de calcul exécuté par le moteur d'arbitrage. Chaque étape est\nidentifiée par un code stable et documentée avec ses valeurs calculées, hypothèses appliquées et références\ndoctrinales associées. Les sections sont navigables via les signets PDF et le sommaire.\nÉtapes du calcul (niveau racine — Assimilé) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nSous-trace « tx_ir_moy » — Régime Assimilé (TX_IR_MOY) . . . . . . . . . . . . . . . . . . . . . . . 4\nSous-trace « strategie_A » — Régime Stratégie Assimilé/A . . . . . . . . . . . . . . . . . . . . . . . 5\nSous-trace « strategie_B » — Régime Stratégie Assimilé/B . . . . . . . . . . . . . . . . . . . . . . . 7\nSous-trace « strategie_C » — Régime Stratégie Assimilé/C . . . . . . . . . . . . . . . . . . . . . . . 9\nSous-trace « strategie_D » — Régime Stratégie Assimilé/D . . . . . . . . . . . . . . . . . . . . . . . 11\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 2 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nÉtapes du calcul (niveau racine — Assimilé)\n4 étape(s) au niveau racine — 0 avec doctrine_ref, 1 avec hypotheses.\nCode Libellé Valeur Unité\nSTRAT_ASSIM_TX_IR_MOY_RACINE Taux moyen IR de référence (calculé en 0.0664 ratio\namont, partagé par les 4 stratégies)\nnote : Voir sous-trace 'tx_ir_moy' pour la chaîne de calcul détaillée\nSTRAT_ASSIM_COMPARE_AB Comparaison delta net par rapport à la 61 908.45 € EUR\nstratégie A (agrégat)\nnote : Stratégie A retenue comme référence par convention v19\nSTRAT_ASSIM_CRITERE_RETENU Critère de sélection appliqué max(total_net)\nnote : Sélection mécanique : aucune appréciation prescriptive\nSTRAT_ASSIM_RETENU Code de la stratégie retenue par le critère D\nci-dessus\nhypothèse critere = max(total_net)\nhypothèse net_retenu = 78 423.80\nnote : Clé technique 'recommandee' conservée pour rétrocompat Phase A. Indicateur factuel — voir TERMINOLOGY.md.\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 3 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « tx_ir_moy » — Régime Assimilé (TX_IR_MOY)\nSpec version : 1.1.0\nÉtapes plates : 11 au total, 11 au niveau racine de cette sous-trace.\nProfil tracé : contexte arbitrage Assimilé, brut_ref=80000.0\nCode Libellé Valeur Unité\nASSIM_TX_IR_MOY_BRUT_REF Salaire brut de référence Assimilé 80 000.00 € EUR\nnote : Profil.salaire_brut_assimile (par défaut 80 000 € v19)\nASSIM_TX_IR_MOY_COTIS_SALARIALES Cotisations salariales sur brut de référence 9 600.00 € EUR\ndoctrine TX_SALARIAL = 0.1200\nASSIM_TX_IR_MOY_CSG_CRDS CSG + CRDS totale sur brut de référence 7 624.20 € EUR\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nASSIM_TX_IR_MOY_CSG_DEDUCTIBLE CSG déductible sur brut de référence 5 344.80 € EUR\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_DEDUCTIBLE = 0.0680\nASSIM_TX_IR_MOY_NET_AVANT_IR Net avant IR (brut - cotis - CSG/CRDS) 62 775.80 € EUR\nASSIM_TX_IR_MOY_REV_SAL_IMP Revenu salarial imposable (avant 65 055.20 € EUR\nabattement)\nnote : Réintégration de la CSG non déductible\nASSIM_TX_IR_MOY_ABATTEMENT Abattement forfaitaire 10 % (plafonné) 6 505.52 € EUR\ndoctrine TX_ABAT_10PCT_SAL = 0.1000\ndoctrine PLAFOND_ABAT_10PCT_SAL = 14 426\nASSIM_TX_IR_MOY_REV_IMP_NET Revenu imposable net (après abattement) 58 549.68 € EUR\nnote : Plancher à 0\nASSIM_TX_IR_MOY_REV_IMP_FOYER Revenu imposable foyer (consolidé) 58 549.68 € EUR\nnote : Inclut autres revenus du foyer\nASSIM_TX_IR_MOY_TOTAL_IMPOTS Total impôts foyer (IR + CEHR + CDHR) 3 888.46 € EUR\ndoctrine IR_PLAFOND_T1 = 11 600\ndoctrine IR_PLAFOND_T2 = 29 579\ndoctrine IR_PLAFOND_T3 = 84 577\ndoctrine IR_PLAFOND_T4 = 181 917\nnote : Délégation à core.ir_foyer\nASSIM_TX_IR_MOY_RESULTAT Taux moyen IR foyer (avec plancher 5 %) 0.0664 ratio\nhypothèse plancher_v19 = 0.0500\nhypothèse tx_moy_avant_plancher = 0.0664\nnote : Plancher v19 appliqué : 0.0664 fi 0.0664\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 4 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_A » — Régime Stratégie Assimilé/A\nSpec version : 1.1.0\nÉtapes plates : 13 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : enveloppe=120000.0, tx_ir_moy=0.0664\nCode Libellé Valeur Unité\nSTRAT_ASSIM_A_ENVELOPPE Enveloppe coût société (input) 120 000.00 € EUR\nhypothèse strategie_code = A\nhypothèse strategie_nom = 100 % rémunération\nSTRAT_ASSIM_A_TX_IR_MOY_APPLIQUE Taux moyen IR appliqué (en provenance 0.0664 ratio\namont)\nnote : Hypothèse uniforme v19 : taux moyen IR identique aux 4 stratégies\nSTRAT_ASSIM_A_ALLOCATION Allocation enveloppe en 4 postes (agrégat) 120 000.00 € EUR\nhypothèse part_salaire = 1.00\nhypothèse part_dividendes = 0.00\nhypothèse part_epargne = 0.00\nhypothèse part_peripheriques = 0.00\nSTRAT_ASSIM_A_NET_SALAIRE Net salaire après cotisations + IR 61 908.45 € EUR\ndoctrine TX_PATRONAL = 0.4200\ndoctrine TX_SALARIAL = 0.1200\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse brut_calcule = 84 507.04\nhypothèse net_avant_ir_calcule = 66 312.46\nnote : Formule C21 v19 — chaîne brut/net unique stratégie\nSTRAT_ASSIM_A_NET_DIVIDENDES Net dividendes après IS + PFU 0.00 € EUR\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_PFU = 0.3140\nhypothèse is_reduit_calcule = 0.00\nhypothèse is_normal_calcule = 0.00\nhypothèse distribuable_calcule = 0.00\nnote : Formule C22 v19 (branche non-TNS)\nSTRAT_ASSIM_A_NET_EPARGNE Net épargne salariale après FS + 0.00 € EUR\nCSG/CRDS\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse fs_applique = 0.00\nhypothèse montant_brut_calcule = 0.00\nnote : Formule C23 v19. FS pondéré selon effectif — détail dans sous-trace fs_moyen_epargne (si attachée)\nSTRAT_ASSIM_A_NET_PERIPHERIQUES Net périphériques (forfait 95 % du coût) 0.00 € EUR\nhypothèse tx_efficacite_periph = 0.9500\nnote : Formule C24 v19 — forfait de transformation\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 5 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nSTRAT_ASSIM_A_TOTAL_NET Total net 4 postes (salaire + div + épargne 61 908.45 € EUR\n+ périph)\nSTRAT_ASSIM_A_EFFICACITE Ratio total_net / coût_total 0.5159 ratio\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 6 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_B » — Régime Stratégie Assimilé/B\nSpec version : 1.1.0\nÉtapes plates : 13 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : enveloppe=120000.0, tx_ir_moy=0.0664\nCode Libellé Valeur Unité\nSTRAT_ASSIM_B_ENVELOPPE Enveloppe coût société (input) 120 000.00 € EUR\nhypothèse strategie_code = B\nhypothèse strategie_nom = 60 % rém / 40 % dividendes\nSTRAT_ASSIM_B_TX_IR_MOY_APPLIQUE Taux moyen IR appliqué (en provenance 0.0664 ratio\namont)\nnote : Hypothèse uniforme v19 : taux moyen IR identique aux 4 stratégies\nSTRAT_ASSIM_B_ALLOCATION Allocation enveloppe en 4 postes (agrégat) 120 000.00 € EUR\nhypothèse part_salaire = 0.6000\nhypothèse part_dividendes = 0.4000\nhypothèse part_epargne = 0.00\nhypothèse part_peripheriques = 0.00\nSTRAT_ASSIM_B_NET_SALAIRE Net salaire après cotisations + IR 37 145.07 € EUR\ndoctrine TX_PATRONAL = 0.4200\ndoctrine TX_SALARIAL = 0.1200\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse brut_calcule = 50 704.23\nhypothèse net_avant_ir_calcule = 39 787.48\nnote : Formule C21 v19 — chaîne brut/net unique stratégie\nSTRAT_ASSIM_B_NET_DIVIDENDES Net dividendes après IS + PFU 27 611.50 € EUR\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_PFU = 0.3140\nhypothèse is_reduit_calcule = 6 375.00\nhypothèse is_normal_calcule = 1 375.00\nhypothèse distribuable_calcule = 40 250.00\nnote : Formule C22 v19 (branche non-TNS)\nSTRAT_ASSIM_B_NET_EPARGNE Net épargne salariale après FS + 0.00 € EUR\nCSG/CRDS\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse fs_applique = 0.00\nhypothèse montant_brut_calcule = 0.00\nnote : Formule C23 v19. FS pondéré selon effectif — détail dans sous-trace fs_moyen_epargne (si attachée)\nSTRAT_ASSIM_B_NET_PERIPHERIQUES Net périphériques (forfait 95 % du coût) 0.00 € EUR\nhypothèse tx_efficacite_periph = 0.9500\nnote : Formule C24 v19 — forfait de transformation\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 7 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nSTRAT_ASSIM_B_TOTAL_NET Total net 4 postes (salaire + div + épargne 64 756.57 € EUR\n+ périph)\nSTRAT_ASSIM_B_EFFICACITE Ratio total_net / coût_total 0.5396 ratio\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 8 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_C » — Régime Stratégie Assimilé/C\nSpec version : 1.1.0\nÉtapes plates : 13 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : enveloppe=120000.0, tx_ir_moy=0.0664\nCode Libellé Valeur Unité\nSTRAT_ASSIM_C_ENVELOPPE Enveloppe coût société (input) 120 000.00 € EUR\nhypothèse strategie_code = C\nhypothèse strategie_nom = + Épargne salariale & PER\nSTRAT_ASSIM_C_TX_IR_MOY_APPLIQUE Taux moyen IR appliqué (en provenance 0.0664 ratio\namont)\nnote : Hypothèse uniforme v19 : taux moyen IR identique aux 4 stratégies\nSTRAT_ASSIM_C_ALLOCATION Allocation enveloppe en 4 postes (agrégat) 120 000.00 € EUR\nhypothèse part_salaire = 0.5000\nhypothèse part_dividendes = 0.3000\nhypothèse part_epargne = 0.2000\nhypothèse part_peripheriques = 0.00\nSTRAT_ASSIM_C_NET_SALAIRE Net salaire après cotisations + IR 30 954.22 € EUR\ndoctrine TX_PATRONAL = 0.4200\ndoctrine TX_SALARIAL = 0.1200\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse brut_calcule = 42 253.52\nhypothèse net_avant_ir_calcule = 33 156.23\nnote : Formule C21 v19 — chaîne brut/net unique stratégie\nSTRAT_ASSIM_C_NET_DIVIDENDES Net dividendes après IS + PFU 20 991.60 € EUR\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_PFU = 0.3140\nhypothèse is_reduit_calcule = 5 400.00\nhypothèse is_normal_calcule = 0.00\nhypothèse distribuable_calcule = 30 600.00\nnote : Formule C22 v19 (branche non-TNS)\nSTRAT_ASSIM_C_NET_EPARGNE Net épargne salariale après FS + 21 672.00 € EUR\nCSG/CRDS\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse fs_applique = 0.00\nhypothèse montant_brut_calcule = 24 000.00\nnote : Formule C23 v19. FS pondéré selon effectif — détail dans sous-trace fs_moyen_epargne (si attachée)\nSTRAT_ASSIM_C_NET_PERIPHERIQUES Net périphériques (forfait 95 % du coût) 0.00 € EUR\nhypothèse tx_efficacite_periph = 0.9500\nnote : Formule C24 v19 — forfait de transformation\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 9 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nSTRAT_ASSIM_C_TOTAL_NET Total net 4 postes (salaire + div + épargne 73 617.82 € EUR\n+ périph)\nSTRAT_ASSIM_C_EFFICACITE Ratio total_net / coût_total 0.6135 ratio\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 10 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_D » — Régime Stratégie Assimilé/D\nSpec version : 1.1.0\nÉtapes plates : 13 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : enveloppe=120000.0, tx_ir_moy=0.0664\nCode Libellé Valeur Unité\nSTRAT_ASSIM_D_ENVELOPPE Enveloppe coût société (input) 120 000.00 € EUR\nhypothèse strategie_code = D\nhypothèse strategie_nom = + Périphériques & cashback\nSTRAT_ASSIM_D_TX_IR_MOY_APPLIQUE Taux moyen IR appliqué (en provenance 0.0664 ratio\namont)\nnote : Hypothèse uniforme v19 : taux moyen IR identique aux 4 stratégies\nSTRAT_ASSIM_D_ALLOCATION Allocation enveloppe en 4 postes (agrégat) 120 000.00 € EUR\nhypothèse part_salaire = 0.4500\nhypothèse part_dividendes = 0.2500\nhypothèse part_epargne = 0.2000\nhypothèse part_peripheriques = 0.1000\nSTRAT_ASSIM_D_NET_SALAIRE Net salaire après cotisations + IR 27 858.80 € EUR\ndoctrine TX_PATRONAL = 0.4200\ndoctrine TX_SALARIAL = 0.1200\ndoctrine ASSIETTE_CSG_SAL = 0.9825\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse brut_calcule = 38 028.17\nhypothèse net_avant_ir_calcule = 29 840.61\nnote : Formule C21 v19 — chaîne brut/net unique stratégie\nSTRAT_ASSIM_D_NET_DIVIDENDES Net dividendes après IS + PFU 17 493.00 € EUR\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_PFU = 0.3140\nhypothèse is_reduit_calcule = 4 500.00\nhypothèse is_normal_calcule = 0.00\nhypothèse distribuable_calcule = 25 500.00\nnote : Formule C22 v19 (branche non-TNS)\nSTRAT_ASSIM_D_NET_EPARGNE Net épargne salariale après FS + 21 672.00 € EUR\nCSG/CRDS\ndoctrine TX_CSG_CRDS_ACT = 0.0970\nhypothèse fs_applique = 0.00\nhypothèse montant_brut_calcule = 24 000.00\nnote : Formule C23 v19. FS pondéré selon effectif — détail dans sous-trace fs_moyen_epargne (si attachée)\nSTRAT_ASSIM_D_NET_PERIPHERIQUES Net périphériques (forfait 95 % du coût) 11 400.00 € EUR\nhypothèse tx_efficacite_periph = 0.9500\nnote : Formule C24 v19 — forfait de transformation\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 11 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nSTRAT_ASSIM_D_TOTAL_NET Total net 4 postes (salaire + div + épargne 78 423.80 € EUR\n+ périph)\nSTRAT_ASSIM_D_EFFICACITE Ratio total_net / coût_total 0.6535 ratio\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 12 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nAvertissements et primauté cabinet\nPrimauté de l'analyse cabinet. Cet outil produit un cadrage indicatif. Toute décision d'arbitrage de rémunération, de\nstructuration juridique ou de mise en œuvre d'un dispositif d'épargne doit être validée par le cabinet en charge du\ndossier, qui dispose de la vue complète sur la situation du dirigeant, sa société, sa trésorerie et ses objectifs\npatrimoniaux.\nCe document constitue un cadrage indicatif et un outil d'aide à la décision. Il n'engage pas la responsabilité de\nl'éditeur du logiciel et ne saurait se substituer à l'analyse complémentaire recommandée du cabinet, au regard de la\nsituation complète du dirigeant et de sa société.\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 13 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0"
+  ],
+  "col_widths_mm": {
+    "code": 61.9,
+    "libelle": 60.8,
+    "valeur": 33.3,
+    "unite": 18.0
+  }
+}

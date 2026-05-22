@@ -1,0 +1,35 @@
+════════════════════════════════════════════════
+  B.3 FINALISÉE — Re-validation finale post-G7f
+  Horodatage UTC : 20260519T112910Z
+  Hash baseline attendu : 8863991f27f67847
+════════════════════════════════════════════════
+
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+  test_backward_compat_imports.py  →   ✓ Aucun module-pont ne subsiste — B.3 finalisée propre
+  test_strategy_tns.py  →   TOTAL : 34/34
+  test_strategy_liberal.py  →   TOTAL : 43/43
+  test_etape4.py  →   TOTAL : 38/38
+  test_etape5.py  →   TOTAL : 61/61
+  test_pdf_render_all_regimes.py  →   TOTAL : 64/64
+  test_no_declaratif_residual.py  →   TOTAL : 8/8
+  test_terminologie_freeze.py  →   ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+
+
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés

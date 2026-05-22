@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-05-19T00:57:17.576661",
+  "version_doctrine": "1.0.1",
+  "tests": {
+    "TNS": {
+      "module": "TNS",
+      "script": "test_parite_tns_complet.py",
+      "expected_total": 114,
+      "tolerance": "0,01 \u20ac",
+      "returncode": 0,
+      "stdout_hash": "eac90da7973be4e6",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 16519,
+      "ok": 114,
+      "total": 114,
+      "ligne_source": "TOTAL : 114/114 cellules en parit\u00e9 exacte"
+    },
+    "Lib\u00e9ral": {
+      "module": "Lib\u00e9ral",
+      "script": "test_parite_liberal.py",
+      "expected_total": 96,
+      "tolerance": "0,01 \u20ac",
+      "returncode": 0,
+      "stdout_hash": "cdf852a5553aa674",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 14316,
+      "ok": 96,
+      "total": 96,
+      "ligne_source": "TOTAL : 96/96 cellules en parit\u00e9"
+    },
+    "Salari\u00e9": {
+      "module": "Salari\u00e9",
+      "script": "test_parite_salarie.py",
+      "expected_total": 84,
+      "tolerance": "0,01 \u20ac",
+      "returncode": 0,
+      "stdout_hash": "7def2b782eb91775",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 12900,
+      "ok": 84,
+      "total": 84,
+      "ligne_source": "TOTAL : 84/84 cellules en parit\u00e9"
+    },
+    "Comparateur Option 2": {
+      "module": "Comparateur Option 2",
+      "script": "test_coherence_comparateur.py",
+      "expected_total": 64,
+      "tolerance": "Coh\u00e9rence interne",
+      "returncode": 0,
+      "stdout_hash": "58bddb86c4492126",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 9451,
+      "ok": 64,
+      "total": 64,
+      "ligne_source": "TOTAL                              : 64/64"
+    },
+    "Synth\u00e8se": {
+      "module": "Synth\u00e8se",
+      "script": "test_synthese.py",
+      "expected_total": 30,
+      "tolerance": "Coh\u00e9rence interne",
+      "returncode": 0,
+      "stdout_hash": "50962f84f934d59b",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 3439,
+      "ok": 30,
+      "total": 30,
+      "ligne_source": "TOTAL : 30/30"
+    },
+    "Sc\u00e9narios A vs B": {
+      "module": "Sc\u00e9narios A vs B",
+      "script": "test_scenarios.py",
+      "expected_total": 88,
+      "tolerance": "0,01 \u20ac",
+      "returncode": 0,
+      "stdout_hash": "7e4b86d02b65a406",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 10924,
+      "ok": 88,
+      "total": 88,
+      "ligne_source": "TOTAL : 88/88 cellules en parit\u00e9 v19 stricte"
+    },
+    "PERIN mutualis\u00e9": {
+      "module": "PERIN mutualis\u00e9",
+      "script": "test_perin.py",
+      "expected_total": 28,
+      "tolerance": "0,01 \u20ac",
+      "returncode": 0,
+      "stdout_hash": "be5474d2fe8a0ac9",
+      "stderr_hash": "e3b0c44298fc1c14",
+      "stdout_len": 4220,
+      "ok": 28,
+      "total": 28,
+      "ligne_source": "TOTAL : 28/28"
+    }
+  },
+  "summary": {
+    "total_ok": 504,
+    "total_total": 504,
+    "nb_modules": 7,
+    "nb_failures": 0,
+    "global_hash": "8863991f27f67847"
+  }
+}

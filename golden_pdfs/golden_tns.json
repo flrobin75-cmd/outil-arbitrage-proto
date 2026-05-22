@@ -1,0 +1,140 @@
+{
+  "spec_golden_version": "1.0.0",
+  "regime": "TNS",
+  "audit_pdf_spec_version": "1.0.0",
+  "baseline_hash": "8863991f27f67847",
+  "kpis": {
+    "etapes_total": 156,
+    "sous_traces_total": 8,
+    "doctrine_refs_distinctes": 11,
+    "hypotheses_total": 114
+  },
+  "codes_etapes_racines": [
+    "STRAT_TNS_COMPARE_AB",
+    "STRAT_TNS_CRITERE_RETENU",
+    "STRAT_TNS_INDICATEURS_SEPARES",
+    "STRAT_TNS_RETENU",
+    "STRAT_TNS_T1_COUT_REMUNERATION",
+    "STRAT_TNS_T1_DIVIDENDES_DISTRIBUABLES",
+    "STRAT_TNS_T1_EFFICACITE_IMMEDIATE",
+    "STRAT_TNS_T1_ENVELOPPE",
+    "STRAT_TNS_T1_IS_SOCIETE",
+    "STRAT_TNS_T1_NET_DIRIGEANT_IMMEDIAT",
+    "STRAT_TNS_T1_NET_DIVIDENDES",
+    "STRAT_TNS_T1_NET_REMUNERATION",
+    "STRAT_TNS_T1_PART_REM_APPLIQUEE",
+    "STRAT_TNS_T1_REMUNERATION_BRUTE",
+    "STRAT_TNS_T1_RESTE_AVANT_IS",
+    "STRAT_TNS_T1_SEUIL_10PCT",
+    "STRAT_TNS_T2_ALERTES_NB",
+    "STRAT_TNS_T2_COUT_REMUNERATION",
+    "STRAT_TNS_T2_DIV_BRUTS_CIBLES",
+    "STRAT_TNS_T2_EFFICACITE_IMMEDIATE",
+    "STRAT_TNS_T2_ENVELOPPE",
+    "STRAT_TNS_T2_GARDE_FOU_90PCT",
+    "STRAT_TNS_T2_IS_POUR_DIV",
+    "STRAT_TNS_T2_NET_DIRIGEANT_IMMEDIAT",
+    "STRAT_TNS_T2_NET_DIVIDENDES",
+    "STRAT_TNS_T2_NET_REMUNERATION",
+    "STRAT_TNS_T2_RATIO_MARGINAL",
+    "STRAT_TNS_T2_REMUNERATION_BRUTE",
+    "STRAT_TNS_T2_RESULTAT_SOCIETE_POUR_DIV",
+    "STRAT_TNS_T2_SEUIL_10PCT",
+    "STRAT_TNS_T3_COUT_REMUNERATION",
+    "STRAT_TNS_T3_DIVIDENDES_PLAFONNES",
+    "STRAT_TNS_T3_ECONOMIE_IR_PERIN",
+    "STRAT_TNS_T3_EFFICACITE_IMMEDIATE",
+    "STRAT_TNS_T3_ENVELOPPE",
+    "STRAT_TNS_T3_IS_SOCIETE",
+    "STRAT_TNS_T3_NET_DIRIGEANT_IMMEDIAT",
+    "STRAT_TNS_T3_NET_DIVIDENDES",
+    "STRAT_TNS_T3_NET_REMUNERATION",
+    "STRAT_TNS_T3_PART_REM_APPLIQUEE",
+    "STRAT_TNS_T3_PLAFOND_PERIN_INDIVIDUEL",
+    "STRAT_TNS_T3_REMUNERATION_BRUTE",
+    "STRAT_TNS_T3_RESTE_AVANT_IS",
+    "STRAT_TNS_T3_SEUIL_10PCT",
+    "STRAT_TNS_T3_TMI_MARGINAL",
+    "STRAT_TNS_T3_VERSEMENT_PERIN",
+    "STRAT_TNS_T4_BENEFICE_RETENU_SOCIETE",
+    "STRAT_TNS_T4_COUT_REMUNERATION",
+    "STRAT_TNS_T4_EFFICACITE_IMMEDIATE",
+    "STRAT_TNS_T4_ENVELOPPE",
+    "STRAT_TNS_T4_IS_SOCIETE",
+    "STRAT_TNS_T4_NET_DIRIGEANT_IMMEDIAT",
+    "STRAT_TNS_T4_NET_REMUNERATION",
+    "STRAT_TNS_T4_PART_REM_APPLIQUEE",
+    "STRAT_TNS_T4_REMUNERATION_BRUTE",
+    "STRAT_TNS_T4_RESTE_AVANT_IS",
+    "STRAT_TNS_T4_SEUIL_10PCT",
+    "TNS_COTIS_SOCIALES",
+    "TNS_COUT_SOCIETE",
+    "TNS_DIVIDENDES",
+    "TNS_IR_FOYER_AGGREGE",
+    "TNS_NET_APRES_IR",
+    "TNS_REM_BRUTE",
+    "TNS_REVENU_IMPOSABLE",
+    "TNS_REVENU_IMPOSABLE_FOYER",
+    "TNS_REVENU_NET_PRO"
+  ],
+  "signets": [
+    {
+      "niveau": 0,
+      "titre": "Étapes du calcul (niveau racine — TNS)"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_T1 » — Régime Stratégie TNS/T1"
+    },
+    {
+      "niveau": 1,
+      "titre": "Détail « module_tns » (régime TNS (appel depuis stratégie T1))"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_T2 » — Régime Stratégie TNS/T2"
+    },
+    {
+      "niveau": 1,
+      "titre": "Détail « module_tns » (régime TNS (appel depuis stratégie T2))"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_T3 » — Régime Stratégie TNS/T3"
+    },
+    {
+      "niveau": 1,
+      "titre": "Détail « module_tns » (régime TNS (appel depuis stratégie T3))"
+    },
+    {
+      "niveau": 0,
+      "titre": "Sous-trace « strategie_T4 » — Régime Stratégie TNS/T4"
+    },
+    {
+      "niveau": 1,
+      "titre": "Détail « module_tns » (régime TNS (appel depuis stratégie T4))"
+    }
+  ],
+  "nb_pages": 13,
+  "texte_par_page": [
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nAudit MODE_AUDIT\nRestitution structurée de la trace de calcul — Régime TNS\nIdentification de la mission\nCabinet : Cabinet TestCo\nClient : M. Dupont\nExpert-comptable : Mme Martin\nDate d'édition : <DATE>\nNiveau de confiance : Avancé\nTraçabilité doctrinale et technique\nDoctrine appliquée : v1.0.1 (figement <DATE>)\nSpec MODE_AUDIT (graphe) : v1.1.0\nSpec PDF audit (renderer) : v1.0.0\nHash baseline : 8863991f27f67847\nProfil tracé\nProfil par défaut (SAS, marié 2p, IS 200k)\nIndicateurs de couverture de l'audit\nÉtapes tracées Sous-traces\n156 8\nRéférences doctrinales Hypothèses\n11 114\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 1 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSommaire\nCette restitution structurée reproduit le graphe de calcul exécuté par le moteur d'arbitrage. Chaque étape est\nidentifiée par un code stable et documentée avec ses valeurs calculées, hypothèses appliquées et références\ndoctrinales associées. Les sections sont navigables via les signets PDF et le sommaire.\nÉtapes du calcul (niveau racine — TNS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nSous-trace « strategie_T1 » — Régime Stratégie TNS/T1 . . . . . . . . . . . . . . . . . . . . . . . . . 4\nDétail « module_tns » (régime TNS (appel depuis stratégie T1)) . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nSous-trace « strategie_T2 » — Régime Stratégie TNS/T2 . . . . . . . . . . . . . . . . . . . . . . . . . 6\nDétail « module_tns » (régime TNS (appel depuis stratégie T2)) . . . . . . . . . . . . . . . . . . . . . . . . . . 7\nSous-trace « strategie_T3 » — Régime Stratégie TNS/T3 . . . . . . . . . . . . . . . . . . . . . . . . . 8\nDétail « module_tns » (régime TNS (appel depuis stratégie T3)) . . . . . . . . . . . . . . . . . . . . . . . . . . 9\nSous-trace « strategie_T4 » — Régime Stratégie TNS/T4 . . . . . . . . . . . . . . . . . . . . . . . . 11\nDétail « module_tns » (régime TNS (appel depuis stratégie T4)) . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 2 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nÉtapes du calcul (niveau racine — TNS)\n4 étape(s) au niveau racine — 0 avec doctrine_ref, 2 avec hypotheses.\nCode Libellé Valeur Unité\nSTRAT_TNS_COMPARE_AB Comparaison delta net par 105 116.99 € EUR\nrapport à T1 (agrégat)\nnote : T1 retenue comme référence par convention v19\nSTRAT_TNS_INDICATEURS_SEPARES Bénéfice retenu T4 109 250.00 € EUR\n(indicateur séparé, NON\ninclus dans le critère de\nsélection)\nhypothèse convention = non-agrégation T4\nhypothèse code_strategie_concernee = T4\nhypothèse net_dirigeant_t4 = 39 188.19\nhypothèse interpretation = indicateur distinct, à lire en complément du net dirigeant\nnote : Tracé pour visibilité, exclu volontairement du critère de sélection\nSTRAT_TNS_CRITERE_RETENU Critère de sélection appliqué max(net_dirigeant_immediat)\nnote : Sélection mécanique sur le net dirigeant immédiat — le bénéfice retenu T4 reste un indicateur séparé\nSTRAT_TNS_RETENU Code de la stratégie retenue T2\npar le critère ci-dessus\nhypothèse critere = max(net_dirigeant_immediat)\nhypothèse net_retenu = 109 886.58\nnote : Clé technique 'recommandee' conservée pour rétrocompat Phase A. Indicateur factuel — voir TERMINOLOGY.md.\nHypothèses longues développées (wordings métier ‡ 80 caractères, reproduits verbatim) :\nSTRAT_TNS_RETENU — hypothèse tous_nets\n{'T1': 105116.98551724138, 'T2': 109886.58389452333, 'T3': 70126.8475862069, 'T4': 39188.18620689655}\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 3 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_T1 » — Régime Stratégie TNS/T1\nSpec version : 1.1.0\nÉtapes plates : 12 au total, 12 au niveau racine de cette sous-trace.\nProfil tracé : benefice_is=200000, capital_cca=100000\nSous-traces attachées : 1 (module_tns)\nCode Libellé Valeur Unité\nSTRAT_TNS_T1_ENVELOPPE Enveloppe bénéfice IS (input) 200 000.00 € EUR\nhypothèse strategie_code = T1\nhypothèse strategie_nom = Rémunération dominante\nSTRAT_TNS_T1_SEUIL_10PCT Seuil 10 % (capital + primes + CCA) 10 000.00 € EUR\n— référence dividendes\ndoctrine SEUIL_DIV_TNS = 0.1000\nhypothèse capital_cca_profil = 100 000.00\nSTRAT_TNS_T1_PART_REM_APPLIQUEE Part de l'enveloppe affectée à la 0.8500 ratio\nrémunération (allocation)\nhypothèse PART_REM_T1 = 0.8500\nnote : Convention v19 T1 — rémunération dominante 85 %\nSTRAT_TNS_T1_REMUNERATION_BRUTE Rémunération brute du dirigeant 117 241.38 € EUR\ncalibrée\nSTRAT_TNS_T1_COUT_REMUNERATION Coût total société pour la 170 000.00 € EUR\nrémunération (brut + cotisations TNS)\ndoctrine TX_TNS = 0.4500\nhypothèse rem_brute_calculee = 117 241.38\nSTRAT_TNS_T1_RESTE_AVANT_IS Reste société avant IS (enveloppe - 30 000.00 € EUR\ncoût rémunération)\nnote : Plancher à 0\nSTRAT_TNS_T1_IS_SOCIETE IS dû par la société sur le reste 4 500.00 € EUR\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\nhypothèse reste_avant_is_calcule = 30 000.00\nnote : Barème simplifié : 15 % jusqu'à 42 500 €, 25 % au-delà\nSTRAT_TNS_T1_DIVIDENDES_DISTRIBUABLES Dividendes distribuables (reste - IS) 25 500.00 € EUR\nSTRAT_TNS_T1_NET_REMUNERATION Net rémunération après cotisations + 94 381.99 € EUR\nIR (depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T1_NET_DIVIDENDES Net dividendes après IS + PFU 10 735.00 € EUR\n(depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T1_NET_DIRIGEANT_IMMEDIAT Net dirigeant immédiat (rém + div) 105 116.99 € EUR\nhypothèse composantes = net_apres_ir + net_dividendes\nSTRAT_TNS_T1_EFFICACITE_IMMEDIATE Ratio net dirigeant immédiat / 0.5256 ratio\nenveloppe\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 4 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nDétail « module_tns » (régime TNS (appel depuis stratégie T1))\nSpec version : 1.1.0\nÉtapes plates : 24 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : rem_brute=117241, div_bruts=25500\nCode Libellé Valeur Unité\nTNS_REM_BRUTE Rémunération nette souhaitée appliquée 117 241.38 € EUR\nTNS_COTIS_SOCIALES Cotisations sociales TNS (agrégat) 69 248.62 € EUR\nTNS_REVENU_NET_PRO Revenu net professionnel après frais réels 117 241.38 € EUR\nTNS_REVENU_IMPOSABLE Revenu imposable individuel TNS 122 171.38 € EUR\nnote : Inclut CSG non déductible (formule C16 v19)\nTNS_REVENU_IMPOSABLE_FOYER Revenu imposable foyer (consolidé) 122 171.38 € EUR\nnote : Inclut autres revenus du conjoint et hors-pro (formule C17 v19)\nTNS_IR_FOYER_AGGREGE Impôts foyer agrégés (IR + CEHR + CDHR) 22 859.39 € EUR\ndoctrine IR_PLAFOND_T1 = 11 600\ndoctrine IR_PLAFOND_T2 = 29 579\ndoctrine IR_PLAFOND_T3 = 84 577\ndoctrine IR_PLAFOND_T4 = 181 917\nnote : Délégation à core.ir_foyer (chaîne IR + QF + CEHR + CDHR)\nTNS_NET_APRES_IR Net dirigeant après IR (formule C35) 94 381.99 € EUR\nTNS_COUT_SOCIETE Coût total pour la société 170 000.00 € EUR\nnote : ratio net/coût = 0.5552\nTNS_DIVIDENDES Dividendes TNS — agrégat 25 500.00 € EUR\nnote : Section 6 v19 (formules C42-C50)\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 5 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_T2 » — Régime Stratégie TNS/T2\nSpec version : 1.1.0\nÉtapes plates : 14 au total, 14 au niveau racine de cette sous-trace.\nProfil tracé : benefice_is=200000, capital_cca=100000\nSous-traces attachées : 1 (module_tns)\nCode Libellé Valeur Unité\nSTRAT_TNS_T2_ENVELOPPE Enveloppe bénéfice IS (input) 200 000.00 € EUR\nhypothèse strategie_code = T2\nhypothèse strategie_nom = Dividendes sous seuil 10 %\nSTRAT_TNS_T2_SEUIL_10PCT Seuil 10 % (capital + primes + CCA) 10 000.00 € EUR\ndoctrine SEUIL_DIV_TNS = 0.1000\nhypothèse capital_cca_profil = 100 000.00\nSTRAT_TNS_T2_RATIO_MARGINAL Ratio seuil_10pct / enveloppe 0.0500 ratio\n(référence d'alerte)\nhypothèse ALERTE_T2_RATIO_MARGINAL_SEUIL = 0.0500\nSTRAT_TNS_T2_RESULTAT_SOCIETE_POUR_DIV Résultat société avant IS nécessaire 11 764.71 € EUR\npour atteindre la cible dividendes\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\nhypothèse branche_is = reduit\nnote : Branche IS appliquée : reduit\nSTRAT_TNS_T2_IS_POUR_DIV IS dû par la société pour produire la 1 764.71 € EUR\ncible dividendes\nSTRAT_TNS_T2_DIV_BRUTS_CIBLES Dividendes bruts cibles (après 10 000.00 € EUR\najustement IS)\nSTRAT_TNS_T2_REMUNERATION_BRUTE Rémunération brute (reste après 129 817.44 € EUR\naffectation aux dividendes)\ndoctrine TX_TNS = 0.4500\nhypothèse reste_pour_rem_calcule = 188 235.29\nSTRAT_TNS_T2_COUT_REMUNERATION Coût total société pour la 188 235.29 € EUR\nrémunération\nSTRAT_TNS_T2_GARDE_FOU_90PCT Application du garde-fou plafond 90 0.00 bool bool\n% (booléen)\nhypothèse plafond_garde_fou = 0.9000\nhypothèse comportement_si_declenche = div = 50 % enveloppe, rem ajustée\nSTRAT_TNS_T2_ALERTES_NB Nombre d'alertes T2 déclenchées 0.00 count count\nhypothèse ALERTE_T2_CAPITAL_FAIBLE_SEUIL = 10 000\nhypothèse ALERTE_T2_RATIO_MARGINAL_SEUIL = 0.0500\nhypothèse capital_cca_profil = 100 000.00\nhypothèse ratio_marginal_calcule = 0.0500\nhypothèse textes_alertes = []\nSTRAT_TNS_T2_NET_REMUNERATION Net rémunération après cotisations 103 026.58 € EUR\n+ IR (depuis module TNS)\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 6 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T2_NET_DIVIDENDES Net dividendes après IS + PFU 6 860.00 € EUR\n(depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T2_NET_DIRIGEANT_IMMEDIAT Net dirigeant immédiat (rém + div) 109 886.58 € EUR\nhypothèse composantes = net_apres_ir + net_dividendes\nSTRAT_TNS_T2_EFFICACITE_IMMEDIATE Ratio net dirigeant immédiat / 0.5494 ratio\nenveloppe\nDétail « module_tns » (régime TNS (appel depuis stratégie T2))\nSpec version : 1.1.0\nÉtapes plates : 24 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : rem_brute=129817, div_bruts=10000\nCode Libellé Valeur Unité\nTNS_REM_BRUTE Rémunération nette souhaitée appliquée 129 817.44 € EUR\nTNS_COTIS_SOCIALES Cotisations sociales TNS (agrégat) 76 676.67 € EUR\nTNS_REVENU_NET_PRO Revenu net professionnel après frais réels 129 817.44 € EUR\nTNS_REVENU_IMPOSABLE Revenu imposable individuel TNS 135 276.27 € EUR\nnote : Inclut CSG non déductible (formule C16 v19)\nTNS_REVENU_IMPOSABLE_FOYER Revenu imposable foyer (consolidé) 135 276.27 € EUR\nnote : Inclut autres revenus du conjoint et hors-pro (formule C17 v19)\nTNS_IR_FOYER_AGGREGE Impôts foyer agrégés (IR + CEHR + CDHR) 26 790.86 € EUR\ndoctrine IR_PLAFOND_T1 = 11 600\ndoctrine IR_PLAFOND_T2 = 29 579\ndoctrine IR_PLAFOND_T3 = 84 577\ndoctrine IR_PLAFOND_T4 = 181 917\nnote : Délégation à core.ir_foyer (chaîne IR + QF + CEHR + CDHR)\nTNS_NET_APRES_IR Net dirigeant après IR (formule C35) 103 026.58 € EUR\nTNS_COUT_SOCIETE Coût total pour la société 188 235.29 € EUR\nnote : ratio net/coût = 0.5473\nTNS_DIVIDENDES Dividendes TNS — agrégat 10 000.00 € EUR\nnote : Section 6 v19 (formules C42-C50)\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 7 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_T3 » — Régime Stratégie TNS/T3\nSpec version : 1.1.0\nÉtapes plates : 16 au total, 16 au niveau racine de cette sous-trace.\nProfil tracé : benefice_is=200000, capital_cca=100000\nSous-traces attachées : 1 (module_tns)\nCode Libellé Valeur Unité\nSTRAT_TNS_T3_ENVELOPPE Enveloppe bénéfice IS (input) 200 000.00 € EUR\nhypothèse strategie_code = T3\nhypothèse strategie_nom = Mix efficient + PERIN\nSTRAT_TNS_T3_SEUIL_10PCT Seuil 10 % (capital + primes + CCA) 10 000.00 € EUR\ndoctrine SEUIL_DIV_TNS = 0.1000\nhypothèse capital_cca_profil = 100 000.00\nSTRAT_TNS_T3_PART_REM_APPLIQUEE Part de l'enveloppe affectée à la 0.5000 ratio\nrémunération\nhypothèse PART_REM_T3 = 0.5000\nnote : Convention v19 T3 — mix équilibré 50 %\nSTRAT_TNS_T3_REMUNERATION_BRUTE Rémunération brute du dirigeant 68 965.52 € EUR\nSTRAT_TNS_T3_COUT_REMUNERATION Coût total société pour la 100 000.00 € EUR\nrémunération\ndoctrine TX_TNS = 0.4500\nSTRAT_TNS_T3_RESTE_AVANT_IS Reste société avant IS 100 000.00 € EUR\nSTRAT_TNS_T3_IS_SOCIETE IS dû par la société 20 750.00 € EUR\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\nSTRAT_TNS_T3_DIVIDENDES_PLAFONNES Dividendes plafonnés au seuil 10 % 10 000.00 € EUR\n(min(seuil, distribuable))\nhypothèse distribuable_brut = 79 250.00\nhypothèse seuil_10pct_reference = 10 000.00\nSTRAT_TNS_T3_PLAFOND_PERIN_INDIVIDUEL Plafond PERIN individuel calculé 6 896.55 € EUR\n(revenu pro = rem brute T3)\ndoctrine PASS_2026 = 48 060\nhypothèse PERIN_PLAFOND_MIN = 4 806.00\nhypothèse PERIN_PLAFOND_MAX = 384 480\nhypothèse revenu_pro_applique = 68 965.52\nhypothèse titulaire = Dirigeant\nSTRAT_TNS_T3_VERSEMENT_PERIN Versement PERIN retenu (= plafond 6 896.55 € EUR\nindividuel par défaut T3)\nnote : Convention T3 — versement par défaut au plafond\nSTRAT_TNS_T3_TMI_MARGINAL TMI marginal du foyer (référence 0.3000 ratio\npour économie PERIN)\nnote : Calculé via core.ir_foyer sur revenu imposable foyer\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 8 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nSTRAT_TNS_T3_ECONOMIE_IR_PERIN Économie d'IR liée au versement 2 068.97 € EUR\nPERIN (versement × TMI marginal)\nhypothèse versement_perin_calcule = 6 896.55\nhypothèse tmi_marginal_calcule = 0.3000\nSTRAT_TNS_T3_NET_REMUNERATION Net rémunération après cotisations + 61 197.88 € EUR\nIR (depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T3_NET_DIVIDENDES Net dividendes après IS + PFU 6 860.00 € EUR\n(depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T3_NET_DIRIGEANT_IMMEDIAT Net dirigeant immédiat (rém + div + 70 126.85 € EUR\néconomie IR PERIN)\nhypothèse composantes = net_apres_ir + net_dividendes + economie_ir_perin\nSTRAT_TNS_T3_EFFICACITE_IMMEDIATE Ratio net dirigeant immédiat / 0.3506 ratio\nenveloppe\nHypothèses longues développées (wordings métier ‡ 80 caractères, reproduits verbatim) :\nSTRAT_TNS_T3_NET_DIRIGEANT_IMMEDIAT — hypothèse note_perin\nLe versement PERIN lui-même n'est pas soustrait — c'est une épargne du dirigeant, pas une charge\nDétail « module_tns » (régime TNS (appel depuis stratégie T3))\nSpec version : 1.1.0\nÉtapes plates : 24 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : rem_brute=68966, div_bruts=10000\nCode Libellé Valeur Unité\nTNS_REM_BRUTE Rémunération nette souhaitée appliquée 68 965.52 € EUR\nTNS_COTIS_SOCIALES Cotisations sociales TNS (agrégat) 40 734.48 € EUR\nTNS_REVENU_NET_PRO Revenu net professionnel après frais réels 68 965.52 € EUR\nTNS_REVENU_IMPOSABLE Revenu imposable individuel TNS 71 865.52 € EUR\nnote : Inclut CSG non déductible (formule C16 v19)\nTNS_REVENU_IMPOSABLE_FOYER Revenu imposable foyer (consolidé) 71 865.52 € EUR\nnote : Inclut autres revenus du conjoint et hors-pro (formule C17 v19)\nTNS_IR_FOYER_AGGREGE Impôts foyer agrégés (IR + CEHR + CDHR) 7 767.64 € EUR\ndoctrine IR_PLAFOND_T1 = 11 600\ndoctrine IR_PLAFOND_T2 = 29 579\ndoctrine IR_PLAFOND_T3 = 84 577\ndoctrine IR_PLAFOND_T4 = 181 917\nnote : Délégation à core.ir_foyer (chaîne IR + QF + CEHR + CDHR)\nTNS_NET_APRES_IR Net dirigeant après IR (formule C35) 61 197.88 € EUR\nTNS_COUT_SOCIETE Coût total pour la société 100 000.00 € EUR\nnote : ratio net/coût = 0.6120\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 9 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nCode Libellé Valeur Unité\nTNS_DIVIDENDES Dividendes TNS — agrégat 10 000.00 € EUR\nnote : Section 6 v19 (formules C42-C50)\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 10 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSous-trace « strategie_T4 » — Régime Stratégie TNS/T4\nSpec version : 1.1.0\nÉtapes plates : 11 au total, 11 au niveau racine de cette sous-trace.\nProfil tracé : benefice_is=200000, capital_cca=100000\nSous-traces attachées : 1 (module_tns)\nCode Libellé Valeur Unité\nSTRAT_TNS_T4_ENVELOPPE Enveloppe bénéfice IS (input) 200 000.00 € EUR\nhypothèse strategie_code = T4\nhypothèse strategie_nom = Arbitrage IS (rétention en société)\nSTRAT_TNS_T4_SEUIL_10PCT Seuil 10 % (référence, non utilisée en 10 000.00 € EUR\nT4)\ndoctrine SEUIL_DIV_TNS = 0.1000\nhypothèse note = T4 ne distribue pas, seuil tracé pour cohérence\nSTRAT_TNS_T4_PART_REM_APPLIQUEE Part de l'enveloppe affectée à la 0.3000 ratio\nrémunération\nhypothèse PART_REM_T4 = 0.3000\nnote : Convention v19 T4 — rémunération réduite 30 %\nSTRAT_TNS_T4_REMUNERATION_BRUTE Rémunération brute du dirigeant 41 379.31 € EUR\nSTRAT_TNS_T4_COUT_REMUNERATION Coût total société pour la rémunération 60 000.00 € EUR\ndoctrine TX_TNS = 0.4500\nSTRAT_TNS_T4_RESTE_AVANT_IS Reste société avant IS 140 000.00 € EUR\nSTRAT_TNS_T4_IS_SOCIETE IS dû par la société 30 750.00 € EUR\ndoctrine IS_PLAF_REDUIT = 42 500\ndoctrine TX_IS_REDUIT = 0.1500\ndoctrine TX_IS_NORMAL = 0.2500\nSTRAT_TNS_T4_BENEFICE_RETENU_SOCIETE Bénéfice retenu en société (indicateur 109 250.00 € EUR\nSÉPARÉ du net dirigeant)\nhypothèse convention_t4 = non-agrégation\nhypothèse regle = Ne PAS sommer avec net_dirigeant_immediat\nnote : Indicateur distinct pour interprétation par l'EC\nSTRAT_TNS_T4_NET_REMUNERATION Net rémunération après cotisations + 39 188.19 € EUR\nIR (depuis module TNS)\nnote : Détails dans sous-trace 'module_tns'\nSTRAT_TNS_T4_NET_DIRIGEANT_IMMEDIAT Net dirigeant immédiat (= 39 188.19 € EUR\nrémunération nette UNIQUEMENT,\nT4)\nhypothèse convention_t4 = non-agrégation\nhypothèse composantes = net_apres_ir uniquement\nhypothèse exclusion_explicite = benefice_retenu_societe (indicateur séparé)\nSTRAT_TNS_T4_EFFICACITE_IMMEDIATE Ratio net dirigeant immédiat / 0.1959 ratio\nenveloppe (sur net dirigeant seul)\nnote : Convention T4 — bénéfice retenu non inclus\nHypothèses longues développées (wordings métier ‡ 80 caractères, reproduits verbatim) :\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 11 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nSTRAT_TNS_T4_BENEFICE_RETENU_SOCIETE — hypothèse texte_alerte_v19\nBénéfice retenu en société : 109,250.00 € (après IS). Cette valeur reste en société et n'est PAS un revenu\ndisponible pour le dirigeant. Sa distribution ultérieure subira la fiscalité applicable au moment de la distribution.\nDétail « module_tns » (régime TNS (appel depuis stratégie T4))\nSpec version : 1.1.0\nÉtapes plates : 24 au total, 9 au niveau racine de cette sous-trace.\nProfil tracé : rem_brute=41379, div_bruts=0 (pas de distribution)\nCode Libellé Valeur Unité\nTNS_REM_BRUTE Rémunération nette souhaitée appliquée 41 379.31 € EUR\nTNS_COTIS_SOCIALES Cotisations sociales TNS (agrégat) 24 440.69 € EUR\nTNS_REVENU_NET_PRO Revenu net professionnel après frais réels 41 379.31 € EUR\nTNS_REVENU_IMPOSABLE Revenu imposable individuel TNS 43 119.31 € EUR\nnote : Inclut CSG non déductible (formule C16 v19)\nTNS_REVENU_IMPOSABLE_FOYER Revenu imposable foyer (consolidé) 43 119.31 € EUR\nnote : Inclut autres revenus du conjoint et hors-pro (formule C17 v19)\nTNS_IR_FOYER_AGGREGE Impôts foyer agrégés (IR + CEHR + CDHR) 2 191.12 € EUR\ndoctrine IR_PLAFOND_T1 = 11 600\ndoctrine IR_PLAFOND_T2 = 29 579\ndoctrine IR_PLAFOND_T3 = 84 577\ndoctrine IR_PLAFOND_T4 = 181 917\nnote : Délégation à core.ir_foyer (chaîne IR + QF + CEHR + CDHR)\nTNS_NET_APRES_IR Net dirigeant après IR (formule C35) 39 188.19 € EUR\nTNS_COUT_SOCIETE Coût total pour la société 60 000.00 € EUR\nnote : ratio net/coût = 0.6531\nTNS_DIVIDENDES Dividendes TNS — agrégat 0.00 € EUR\nnote : Section 6 v19 (formules C42-C50)\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 12 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0",
+    "Cabinet TestCo Audit MODE_AUDIT — M. Dupont\nAvertissements et primauté cabinet\nPrimauté de l'analyse cabinet. Cet outil produit un cadrage indicatif. Toute décision d'arbitrage de rémunération, de\nstructuration juridique ou de mise en œuvre d'un dispositif d'épargne doit être validée par le cabinet en charge du\ndossier, qui dispose de la vue complète sur la situation du dirigeant, sa société, sa trésorerie et ses objectifs\npatrimoniaux.\nCe document constitue un cadrage indicatif et un outil d'aide à la décision. Il n'engage pas la responsabilité de\nl'éditeur du logiciel et ne saurait se substituer à l'analyse complémentaire recommandée du cabinet, au regard de la\nsituation complète du dirigeant et de sa société.\nDoctrine v1.0.1 — France 2026 Niveau : Avancé Page 13 — <DATE>\nAudit baseline hash : 8863991f27f67847 Document d'audit à usage cabinet — Traçabilité MODE_AUDIT. Audit PDF spec v1.0.0"
+  ],
+  "col_widths_mm": {
+    "code": 68.4,
+    "libelle": 34.5,
+    "valeur": 53.4,
+    "unite": 17.8
+  }
+}

@@ -1,0 +1,87 @@
+════════════════════════════════════════════════
+  RE-VALIDATION FINALE — B.2 freeze + B.2.5
+  Horodatage UTC : 20260519T104419Z
+  Hash baseline attendu : 8863991f27f67847
+════════════════════════════════════════════════
+
+── compare_baseline.py (16 valeurs numériques) ──
+━━━ RÉSULTAT ━━━
+  Validations OK     : 16
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── check_imports.py (16 fichiers architecture) ──
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── baseline_tests.py compare (504 tests baseline) ──
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+════════════════════════════════════════════════
+  Suites B.2 (348 validations)
+════════════════════════════════════════════════
+── test_backward_compat_imports.py
+   
+     ✓ Tous les imports rétrocompatibles fonctionnent
+── test_strategy_tns.py
+     TOTAL : 34/34
+     ✓ T4 alerte non-disponibilité présente                         obtenu=True
+── test_strategy_liberal.py
+     TOTAL : 43/43
+     ✓ L2: pas d'alerte BNC/SEL (BNC pur)                           obtenu=True
+── test_etape4.py
+     TOTAL : 38/38
+     ✓ Aucune note Libéral n'a de formulation 'recommandée' positive obtenu=True
+── test_etape5.py
+     TOTAL : 61/61
+     ✓ Madelin PAS dans MATRICE_RECEPTACLES (hors v1)          obtenu=True
+── test_pdf_render_all_regimes.py
+     TOTAL : 64/64
+     ✓ salarie: 'Régime social' = 'Assimilé salarié' affiché
+── test_no_declaratif_residual.py
+     TOTAL : 8/8
+     ✓ Dette sémantique 'Déclaratif' totalement purgée du livrable.
+── test_terminologie_freeze.py
+   
+     ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+
+════════════════════════════════════════════════
+  Audits sémantiques
+════════════════════════════════════════════════
+
+── audit_final_b2_controle3.py (historique, 4 patterns) ──
+  agregation_T4             1        1            0            ✓ OK
+
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+
+── semantic_guardrails.py (B.2.5 unifié, 9 patterns) ──
+  Pattern                           Total   Autorisées   Violations  Statut
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  Déclaratif (nom de niveau)            4            4            0  ✓ OK
+  déclaratif (adjectif visible)         1            1            0  ✓ OK
+  recommandée / recommandation         34           34            0  ✓ OK
+  optimisation / optimal                2            2            0  ✓ OK
+  garanti / garantie                    2            2            0  ✓ OK
+  sans risque                           0            0            0  ✓ OK
+  meilleur régime                       0            0            0  ✓ OK
+  recommandé automatiquement            0            0            0  ✓ OK
+  agregation_T4                         1            1            0  ✓ OK
+  ──────────────────────────────────────────────────────────────────────────────────────────
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés

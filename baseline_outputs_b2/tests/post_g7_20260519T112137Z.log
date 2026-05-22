@@ -1,0 +1,150 @@
+════════════════════════════════════════════════
+  B.3 — Migration G7 finalisée (ponts supprimés)
+  Horodatage UTC : 20260519T112137Z
+  Hash baseline attendu : 8863991f27f67847
+════════════════════════════════════════════════
+
+── État du dépôt racine ──
+/home/claude/tns_dev/app.py
+/home/claude/tns_dev/audit_final_b2_controle3.py
+/home/claude/tns_dev/baseline_outputs.py
+/home/claude/tns_dev/baseline_tests.py
+/home/claude/tns_dev/check_imports.py
+/home/claude/tns_dev/compare_baseline.py
+/home/claude/tns_dev/doctrine.py
+/home/claude/tns_dev/generer_cibles.py
+/home/claude/tns_dev/generer_cibles_liberal.py
+/home/claude/tns_dev/semantic_guardrails.py
+/home/claude/tns_dev/test_backward_compat_imports.py
+/home/claude/tns_dev/test_coherence_comparateur.py
+/home/claude/tns_dev/test_etape4.py
+/home/claude/tns_dev/test_etape5.py
+/home/claude/tns_dev/test_no_declaratif_residual.py
+/home/claude/tns_dev/test_parite_liberal.py
+/home/claude/tns_dev/test_parite_salarie.py
+/home/claude/tns_dev/test_parite_tns_complet.py
+/home/claude/tns_dev/test_pdf_render_all_regimes.py
+/home/claude/tns_dev/test_perin.py
+/home/claude/tns_dev/test_scenarios.py
+/home/claude/tns_dev/test_strategy_liberal.py
+/home/claude/tns_dev/test_strategy_tns.py
+/home/claude/tns_dev/test_synthese.py
+/home/claude/tns_dev/test_terminologie_freeze.py
+
+── Contrôle 0-pont (grep exhaustif tout le dépôt) ──
+moteur_ :  0 occurrence(s)
+
+── import app.py ──
+  ✓ app.py importable
+
+── compare_baseline.py ──
+  Validations OK     : 16
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── check_imports.py ──
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── baseline_tests.py compare (504 tests) ──
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+── test_backward_compat_imports.py ──
+━━━ RÉSULTAT ━━━
+  OK    : 23/23
+  KO    : 0
+
+  ✓ Aucun module-pont ne subsiste — B.3 finalisée propre
+
+── test_strategy_tns.py ──
+  Cas C (ratio marginal seul)      : 4/4
+  Cas D (célibataire, PERIN seul)  : 3/3
+  Test structurel non-agrégation T4: 11/11
+
+  TOTAL : 34/34
+
+── test_strategy_liberal.py ──
+  Cas C (SELAS, président Assimilé) : 5/5
+  Cas D (Comparabilité L1 vs L3)    : 7/7
+  Garde-fous méthodologiques        : 12/12
+
+  TOTAL : 43/43
+
+── test_etape4.py ──
+  4a — Synthèse multi-régimes        : 12/12
+  4b — Comparateur de régimes        : 17/17
+  Garde-fous méthodologiques         : 9/9
+
+  TOTAL : 38/38
+
+── test_etape5.py ──
+  5.C — Filtre Comparateur            : 12/12
+  5.D — Mention Madelin + helpers     : 11/11
+  5.E — Garde-fous unicité règle      : 3/3
+
+  TOTAL : 61/61
+
+── test_pdf_render_all_regimes.py ──
+  6.E — Garde-fous critiques métier        : 7/7
+  6.F — Régime affiché explicitement       : 5/5
+
+  TOTAL : 64/64
+  PDF générés sauvegardés dans : /tmp/pdf_test_outputs/
+
+── test_no_declaratif_residual.py ──
+  Test 3 — Aucun PDF contient le terme : ✓  (6/6)
+
+  TOTAL : 8/8
+
+  ✓ Dette sémantique 'Déclaratif' totalement purgée du livrable.
+
+── test_terminologie_freeze.py ──
+  ✓ recommandée_positive            occurrences=34, violations=0
+
+  ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+    soit dans des disclaimers négatifs, soit dans des docstrings de
+    garde-fou, soit dans des contextes techniques neutres.
+
+── semantic_guardrails.py ──
+  ──────────────────────────────────────────────────────────────────────────────────────────
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+
+── audit_final_b2_controle3.py ──
+  agregation_T4             1        1            0            ✓ OK
+
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+
+── Smoke test Streamlit (6s headless) ──
+2026-05-19 11:22:24.531 Uvicorn server started on 0.0.0.0:8767
+2026-05-19 11:22:24.671 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8767
+  Network URL: http://192.0.2.2:8767
+
+── Comparaison 6 PDF vs freeze B.2 + B.2.5 ──
+  pdf_assimile : freeze=16364  post=16364  delta=0
+  pdf_liberal_bnc : freeze=9967  post=9967  delta=0
+  pdf_liberal_sel : freeze=9921  post=9921  delta=0
+  pdf_salarie : freeze=7731  post=7731  delta=0
+  pdf_tns : freeze=9292  post=9292  delta=0
+  pdf_tns_t4 : freeze=10082  post=10082  delta=0

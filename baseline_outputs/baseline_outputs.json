@@ -1,0 +1,52 @@
+{
+  "version_doctrine": "1.0.1",
+  "cases": {
+    "arbitrage_assimile_defaut": {
+      "strategie_A_net": 61908.4495,
+      "strategie_B_net": 64756.5697,
+      "strategie_C_net": 73617.8248,
+      "strategie_D_net": 78423.8023,
+      "recommandee": "D",
+      "tx_ir_moy": 0.066413
+    },
+    "comparateur_defaut": {
+      "nb_lignes": 15,
+      "nb_alertes": 1,
+      "salaire_net_apres_ir": 45696.3803,
+      "dividendes_net_apres_ir": 6860.0,
+      "perin_montant": 5000
+    },
+    "synthese_strategie_D": {
+      "net_dirigeant_retenu": 78423.8023,
+      "gain_vs_a": 16515.3528,
+      "gain_5_ans": 94705.7369,
+      "total_couts": 4700,
+      "roi_mois": 3.415,
+      "nb_scores_radar": 4,
+      "radar_D_net": 100.0,
+      "radar_D_protection_sociale": 46.0443,
+      "radar_D_fiscalite": 65.3532,
+      "radar_D_retraite": 27.6345
+    },
+    "perin_mutualise": {
+      "plafond_dirigeant": 7000.0,
+      "plafond_conjoint": 5000.0,
+      "plafond_mutualise_total": 11000.0,
+      "versement_couvert": 10000,
+      "excedent": 0,
+      "economie_ir": 4100.0
+    },
+    "scenarios_avant_apres_dividendes": {
+      "A_total_net": 71074.9375,
+      "B_total_net": 116415.4375,
+      "ecart_total": 45340.5,
+      "ecart_pourcent": 0.637925,
+      "gagnant": "B"
+    },
+    "pdf_synthese": {
+      "taille_bytes": 16384,
+      "header_pdf": "%PDF-1.4",
+      "format_valide": true
+    }
+  }
+}

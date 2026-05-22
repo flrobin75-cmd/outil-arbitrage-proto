@@ -1,0 +1,288 @@
+{
+  "cas_nom": "composition_5000",
+  "composition_dataclass": {
+    "PEE": {
+      "accessible": true,
+      "enveloppe": "PEE",
+      "valeurs_nettes_par_horizon": [
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 5000.0,
+          "horizon": 5,
+          "valeur_nette": 9201.95
+        },
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 5000.0,
+          "horizon": 10,
+          "valeur_nette": 10008.03
+        },
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 5000.0,
+          "horizon": 20,
+          "valeur_nette": 11880.63
+        }
+      ]
+    },
+    "PERECO": {
+      "accessible": true,
+      "enveloppe": "PERECO",
+      "valeurs_nettes_par_horizon": [
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 3364.2,
+          "horizon": 5,
+          "valeur_nette": 7439.15
+        },
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 3364.2,
+          "horizon": 10,
+          "valeur_nette": 8105.02
+        },
+        {
+          "cout_entreprise": 3844.8,
+          "effort_reel": 3364.2,
+          "horizon": 20,
+          "valeur_nette": 9651.88
+        }
+      ]
+    },
+    "PERIN": {
+      "accessible": true,
+      "enveloppe": "PERIN",
+      "valeurs_nettes_par_horizon": [
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 3364.2,
+          "horizon": 5,
+          "valeur_nette": 3714.35
+        },
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 3364.2,
+          "horizon": 10,
+          "valeur_nette": 4100.94
+        },
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 3364.2,
+          "horizon": 20,
+          "valeur_nette": 4999.02
+        }
+      ]
+    },
+    "PERO": {
+      "accessible": true,
+      "enveloppe": "PERO",
+      "valeurs_nettes_par_horizon": [
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 0.0,
+          "horizon": 5,
+          "valeur_nette": 0.0
+        },
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 0.0,
+          "horizon": 10,
+          "valeur_nette": 0.0
+        },
+        {
+          "cout_entreprise": 0.0,
+          "effort_reel": 0.0,
+          "horizon": 20,
+          "valeur_nette": 0.0
+        }
+      ]
+    }
+  },
+  "enveloppe": "ORCHESTRATEUR",
+  "etapes_recap_snapshot": [
+    {
+      "code": "REC_RECAP_VALEUR_NETTE_5ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "valeur_nette_PERIN",
+          3714.35
+        ],
+        [
+          "valeur_nette_PEE",
+          9201.95
+        ],
+        [
+          "valeur_nette_PERECO",
+          7439.15
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_EFFORT_REEL_5ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "effort_reel_PERIN",
+          3364.2
+        ],
+        [
+          "effort_reel_PEE",
+          5000.0
+        ],
+        [
+          "effort_reel_PERECO",
+          3364.2
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_COUT_ENTREPRISE_5ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "cout_entreprise_PERIN",
+          0.0
+        ],
+        [
+          "cout_entreprise_PEE",
+          3844.8
+        ],
+        [
+          "cout_entreprise_PERECO",
+          3844.8
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_VALEUR_NETTE_10ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "valeur_nette_PERIN",
+          4100.94
+        ],
+        [
+          "valeur_nette_PEE",
+          10008.03
+        ],
+        [
+          "valeur_nette_PERECO",
+          8105.02
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_EFFORT_REEL_10ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "effort_reel_PERIN",
+          3364.2
+        ],
+        [
+          "effort_reel_PEE",
+          5000.0
+        ],
+        [
+          "effort_reel_PERECO",
+          3364.2
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_COUT_ENTREPRISE_10ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "cout_entreprise_PERIN",
+          0.0
+        ],
+        [
+          "cout_entreprise_PEE",
+          3844.8
+        ],
+        [
+          "cout_entreprise_PERECO",
+          3844.8
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_VALEUR_NETTE_20ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "valeur_nette_PERIN",
+          4999.02
+        ],
+        [
+          "valeur_nette_PEE",
+          11880.63
+        ],
+        [
+          "valeur_nette_PERECO",
+          9651.88
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_EFFORT_REEL_20ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "effort_reel_PERIN",
+          3364.2
+        ],
+        [
+          "effort_reel_PEE",
+          5000.0
+        ],
+        [
+          "effort_reel_PERECO",
+          3364.2
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    },
+    {
+      "code": "REC_RECAP_COUT_ENTREPRISE_20ANS",
+      "hypotheses_enveloppes_ordonnees": [
+        [
+          "cout_entreprise_PERIN",
+          0.0
+        ],
+        [
+          "cout_entreprise_PEE",
+          3844.8
+        ],
+        [
+          "cout_entreprise_PERECO",
+          3844.8
+        ]
+      ],
+      "ordre_stable_mention": "PERIN → PEE → PERECO → PERO (SP25)",
+      "valeur_scalaire": 4
+    }
+  ],
+  "input_flux_disponible": 5000.0,
+  "input_horizons": [
+    5,
+    10,
+    20
+  ],
+  "nb_etapes_racine_total": 15,
+  "sous_traces_attachees_ordonnees": [
+    "ligne_perin",
+    "ligne_pee",
+    "ligne_pereco",
+    "ligne_pero"
+  ]
+}

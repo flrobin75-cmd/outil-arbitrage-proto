@@ -49,7 +49,6 @@ from strategy.perin import (
     PERIN_PLAFOND_MIN, PERIN_PLAFOND_MAX,
 )
 from ui.pdf_export import generer_pdf_synthese
-from ui.page_receptacles import page_receptacles as _page_receptacles_v11
 from ui.admin import (
     construire_catalogue, restaurer_doctrine_officielle,
     enregistrer_modif, lister_modifications_actives,
@@ -81,7 +80,6 @@ PAGES = {
     "🎯 Arbitrage stratégique": "arbitrage",
     "🔬 Modules détaillés": "modules",
     "🧮 Comparateur de dispositifs": "comparateur",
-    "🧰 Réceptacles auditables": "receptacles_v11",
     "📋 Synthèse dirigeant": "synthese",
     "🔀 Scénarios A vs B": "scenarios",
     "💼 Comparateur patrimonial": "patrimonial",
@@ -1425,21 +1423,10 @@ def page_admin():
 # ============================================================
 # ROUTAGE
 # ============================================================
-def page_receptacles_auditables():
-    """Wrapper : délègue au module dédié SP20 (v1.2).
-
-    Reconstruit le profil depuis la barre latérale et passe la main à
-    `ui.page_receptacles.page_receptacles`. Aucune logique métier ici.
-    """
-    profil = build_profil()
-    _page_receptacles_v11(profil)
-
-
 ROUTES = {
     "arbitrage": page_arbitrage,
     "modules": page_modules,
     "comparateur": page_comparateur,
-    "receptacles_v11": page_receptacles_auditables,
     "synthese": page_synthese,
     "scenarios": page_scenarios,
     "patrimonial": page_patrimonial,

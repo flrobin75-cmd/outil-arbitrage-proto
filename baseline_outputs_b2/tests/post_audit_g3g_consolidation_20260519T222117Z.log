@@ -1,0 +1,80 @@
+=================================================================
+  VALIDATION FINALE POST-G3g (figement doctrine G3)
+  Timestamp UTC : 20260519T222117Z
+  Document figé : MODE_AUDIT_G3_FINAL.md
+=================================================================
+
+── 1. Baseline numérique (hash) ──
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── 2. Architecture (règles d'import) ──
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 17 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── 3. 504 baseline tests ──
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+  Modules conformes    : 7/7
+  Régressions          : 0
+
+── 4. 6 suites B.2 standalone ──
+  test_backward_compat_imports.py  →    ✓ Aucun module-pont ne subsiste — B.3 finalisée propre
+  test_strategy_tns.py  →    TOTAL : 34/34
+  test_strategy_liberal.py  →    TOTAL : 43/43
+  test_synthese.py  →    TOTAL : 30/30
+  test_scenarios.py  →    Cibles versionnées dans : /home/claude/tns_dev/cibles_scenarios.json
+  test_perin.py  →    TOTAL : 28/28
+
+── 5. 13 suites MODE_AUDIT ──
+  test_mode_audit_tns.py  →    ✓ Tous les tests MODE_AUDIT TNS passent
+  test_mode_audit_liberal.py  →    ✓ Tous les tests MODE_AUDIT Libéral (BNC + SEL) passent
+  test_mode_audit_salarie.py  →    ✓ Tous les tests MODE_AUDIT Salarié passent
+  test_mode_audit_assimile.py  →    ✓ Tous les tests MODE_AUDIT Assimilé passent (G2b)
+  test_mode_audit_strategy_assimile.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Assimilé passent (G3a)
+  test_mode_audit_strategy_tns.py  →    ✓ Tous les tests MODE_AUDIT Strategy/TNS passent (G3b)
+  test_mode_audit_strategy_liberal.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Libéral passent (G3c)
+  test_mode_audit_strategy_comparateur.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Comparateur passent (G3d)
+  test_mode_audit_strategy_comparateur_regimes.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Comparateur_Regimes passent (G3d-bis)
+  test_mode_audit_strategy_synthese.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Synthese passent (G3e-synthese)
+  test_mode_audit_strategy_scenarios.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Scenarios passent (G3e-scenarios)
+  test_mode_audit_strategy_perin.py  →    ✓ Tous les tests MODE_AUDIT Strategy/PERIN passent (G3f-perin)
+  test_mode_audit_strategy_receptacles.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Receptacles passent (G3f-receptacles)
+
+── 6. 3 audits sémantiques ──
+  semantic_guardrails.py :
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+  audit_final_b2_controle3.py :
+
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+  test_terminologie_freeze.py :
+  ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+    soit dans des disclaimers négatifs, soit dans des docstrings de
+    garde-fou, soit dans des contextes techniques neutres.
+
+── 7. Documents figés présents ──
+  ✓ MODE_AUDIT_G3_FINAL.md (849 lignes)
+  ✓ AUDIT_MODE.md (736 lignes)
+  ✓ ARCHITECTURE.md (417 lignes)
+  ✓ KNOWN_LIMITATIONS.md (171 lignes)
+  ✓ README_FREEZE_B2.md (184 lignes)
+
+── 8. Récaps figés préservés (intégrité) ──
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_1.md
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_2.md
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_3.md
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_4.md
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_5.md
+  ✓ RECAP_SESSION_MODE_AUDIT_v1_6.md
+
+=================================================================
+  FIN VALIDATION POST-G3g — TOUT VERT, DOCTRINE G3 FIGÉE
+=================================================================

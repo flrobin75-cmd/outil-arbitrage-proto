@@ -1,0 +1,90 @@
+════════════════════════════════════════════════
+  B.3 — Migration app.py G1→G6 terminée
+  Horodatage UTC : 20260519T110449Z
+  Hash baseline attendu : 8863991f27f67847
+════════════════════════════════════════════════
+
+── Inventaire imports app.py après G6 ──
+19:import streamlit as st
+20:import plotly.graph_objects as go
+21:from plotly.subplots import make_subplots
+22:import pandas as pd
+25:from core.profil import Profil, SITUATIONS_PARTICULIERES
+26:from regime.tns import calcul_module_tns
+27:from regime.liberal import calcul_module_bnc, calcul_module_sel
+28:from regime.salarie import calcul_module_salarie
+29:from strategy.assimile import arbitrage_complet, STRATEGIES
+30:from core.projection import projection_5_ans
+31:from strategy.comparateur import (
+34:from strategy.synthese import (
+38:from strategy.scenarios import (
+42:from doctrine import (
+47:from strategy.perin import (
+51:from ui.pdf_export import generer_pdf_synthese
+52:from ui.admin import (
+57:from ui.utils import (
+
+── Contrôle 0-pont ──
+grep '^from moteur_' : 0
+grep '^import moteur_' : 0
+grep '^from (moteur|utils_ui|export_pdf|admin_parametres)' : 0
+
+── 11 suites + audits ──
+  Validations OK     : 16
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+── test_backward_compat_imports.py
+━━━ RÉSULTAT ━━━
+  ✓ Tous les imports rétrocompatibles fonctionnent
+
+── test_strategy_tns.py
+  TOTAL : 34/34
+
+── test_strategy_liberal.py
+  TOTAL : 43/43
+
+── test_etape4.py
+  TOTAL : 38/38
+
+── test_etape5.py
+  TOTAL : 61/61
+
+── test_pdf_render_all_regimes.py
+  TOTAL : 64/64
+
+── test_no_declaratif_residual.py
+  TOTAL : 8/8
+
+── test_terminologie_freeze.py
+  ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+
+── audit_final_b2_controle3.py ──
+  agregation_T4             1        1            0            ✓ OK
+
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+
+── semantic_guardrails.py ──
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés

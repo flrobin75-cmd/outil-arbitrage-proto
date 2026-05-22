@@ -1,0 +1,47 @@
+{
+  "accessible": true,
+  "cas_nom": "abondement_plafonne",
+  "enveloppe": "PEE",
+  "input_flux_disponible": 5000.0,
+  "input_horizons": [
+    5,
+    10,
+    20
+  ],
+  "lignes_par_horizon": [
+    {
+      "capital_projete": 9353.61,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Indisponible 5 ans à compter de chaque versement, puis sortie libre sans condition.",
+      "economie_fiscale_immediate": 0.0,
+      "effort_reel": 5000.0,
+      "fiscalite_sortie": 151.66,
+      "flux_entrant_brut": 5000.0,
+      "horizon_annees": 5,
+      "valeur_nette": 9201.95
+    },
+    {
+      "capital_projete": 10327.14,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Indisponible 5 ans à compter de chaque versement, puis sortie libre sans condition.",
+      "economie_fiscale_immediate": 0.0,
+      "effort_reel": 5000.0,
+      "fiscalite_sortie": 319.11,
+      "flux_entrant_brut": 5000.0,
+      "horizon_annees": 10,
+      "valeur_nette": 10008.03
+    },
+    {
+      "capital_projete": 12588.73,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Indisponible 5 ans à compter de chaque versement, puis sortie libre sans condition.",
+      "economie_fiscale_immediate": 0.0,
+      "effort_reel": 5000.0,
+      "fiscalite_sortie": 708.1,
+      "flux_entrant_brut": 5000.0,
+      "horizon_annees": 20,
+      "valeur_nette": 11880.63
+    }
+  ],
+  "motif_inaccessibilite": ""
+}

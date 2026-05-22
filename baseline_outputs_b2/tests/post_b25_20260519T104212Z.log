@@ -1,0 +1,96 @@
+==============================================
+  RE-VALIDATION FINALE B.2 + B.2.5
+  Horodatage UTC : 20260519T104212Z
+  Hash baseline attendu : 8863991f27f67847
+==============================================
+
+── compare_baseline.py ──
+→ Scénarios A vs B (avant/après dividendes)
+  ✓ A_total_net:  71,074.9375 vs  71,074.9375
+  ✓ B_total_net: 116,415.4375 vs 116,415.4375
+  ✓ ecart_total:  45,340.5000 vs  45,340.5000
+
+━━━ RÉSULTAT ━━━
+  Validations OK     : 16
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── check_imports.py ──
+  ✓ liberal.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── baseline_tests.py compare (504 tests) ──
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+── test_backward_compat_imports.py ──
+
+── test_strategy_tns.py ──
+  TOTAL : 34/34
+
+── test_strategy_liberal.py ──
+  TOTAL : 43/43
+
+── test_etape4.py ──
+  TOTAL : 38/38
+
+── test_etape5.py ──
+  TOTAL : 61/61
+
+── test_pdf_render_all_regimes.py ──
+  TOTAL : 64/64
+
+── test_no_declaratif_residual.py ──
+  TOTAL : 8/8
+
+── test_terminologie_freeze.py ──
+       ✗ ui/disclaimers.py:162
+       ✗ ui/disclaimers.py:160
+  ✗ optimisation                    occurrences=2, violations=1
+
+── semantic_guardrails.py (B.2.5 unifié, 9 patterns) ──
+
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  Pattern                           Total   Autorisées   Violations  Statut
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  Déclaratif (nom de niveau)            4            4            0  ✓ OK
+  déclaratif (adjectif visible)         1            1            0  ✓ OK
+  recommandée / recommandation         34           34            0  ✓ OK
+  optimisation / optimal                2            2            0  ✓ OK
+  garanti / garantie                    2            2            0  ✓ OK
+  sans risque                           0            0            0  ✓ OK
+  meilleur régime                       0            0            0  ✓ OK
+  recommandé automatiquement            0            0            0  ✓ OK
+  agregation_T4                         1            1            0  ✓ OK
+  ──────────────────────────────────────────────────────────────────────────────────────────
+
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+
+── audit_final_b2_controle3.py (historique, 4 patterns) ──
+
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  Pattern                   Total    Autorisées   Violations   Statut
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  Déclaratif                4        4            0            ✓ OK
+  recommandée_visible       36       35           1            ✗ 1 viol.
+  optimisation_visible      2        1            1            ✗ 1 viol.
+  agregation_T4             1        1            0            ✓ OK
+
+  ✗ 2 violation(s) à examiner

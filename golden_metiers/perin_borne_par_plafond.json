@@ -1,0 +1,47 @@
+{
+  "accessible": true,
+  "cas_nom": "borne_par_plafond",
+  "enveloppe": "PERIN",
+  "input_flux_disponible": 10000.0,
+  "input_horizons": [
+    5,
+    10,
+    20
+  ],
+  "lignes_par_horizon": [
+    {
+      "capital_projete": 5306.21,
+      "cout_entreprise": 0.0,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 1591.86,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 5,
+      "valeur_nette": 3714.35
+    },
+    {
+      "capital_projete": 5858.49,
+      "cout_entreprise": 0.0,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 1757.55,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 10,
+      "valeur_nette": 4100.94
+    },
+    {
+      "capital_projete": 7141.46,
+      "cout_entreprise": 0.0,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 2142.44,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 20,
+      "valeur_nette": 4999.02
+    }
+  ],
+  "motif_inaccessibilite": ""
+}

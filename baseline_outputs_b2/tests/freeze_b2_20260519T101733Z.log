@@ -1,0 +1,672 @@
+==========================================
+  FREEZE B.2 — Re-validation 11 suites
+  Horodatage UTC : 20260519T101733Z
+  Hash baseline attendu : 8863991f27f67847
+==========================================
+
+── compare_baseline.py ──
+================================================================================
+  COMPARAISON ÉTAT ACTUEL vs BASELINE
+================================================================================
+
+Baseline doctrine v1.0.1
+
+→ Arbitrage Assimilé par défaut
+  ✓ A:  61,908.4495 vs baseline  61,908.4495
+  ✓ B:  64,756.5697 vs baseline  64,756.5697
+  ✓ C:  73,617.8248 vs baseline  73,617.8248
+  ✓ D:  78,423.8023 vs baseline  78,423.8023
+
+→ Comparateur Option 2
+  ✓ nb_lignes: 15 vs 15
+
+→ Synthèse stratégie D
+  ✓ net_dirigeant_retenu:  78,423.8023 vs  78,423.8023
+  ✓ gain_vs_a:  16,515.3528 vs  16,515.3528
+  ✓ gain_5_ans:  94,705.7369 vs  94,705.7369
+  ✓ total_couts:   4,700.0000 vs   4,700.0000
+  ✓ roi_mois:       3.4150 vs       3.4150
+
+→ PERIN mutualisé
+  ✓ plafond_mutualise_total:  11,000.0000 vs  11,000.0000
+  ✓ versement_couvert:  10,000.0000 vs  10,000.0000
+  ✓ economie_ir:   4,100.0000 vs   4,100.0000
+
+→ Scénarios A vs B (avant/après dividendes)
+  ✓ A_total_net:  71,074.9375 vs  71,074.9375
+  ✓ B_total_net: 116,415.4375 vs 116,415.4375
+  ✓ ecart_total:  45,340.5000 vs  45,340.5000
+
+━━━ RÉSULTAT ━━━
+  Validations OK     : 16
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── check_imports.py ──
+================================================================================
+  CHECK IMPORTS — Règles d'architecture canoniques
+================================================================================
+
+Règle : core ← regime ← strategy ← ui ← app
+
+▸ Scope : core/  (ne peut pas importer : regime, strategy, ui)
+  ✓ profil.py
+  ✓ projection.py
+  ✓ ir_foyer.py
+
+▸ Scope : regime/  (ne peut pas importer : strategy, ui)
+  ✓ assimile.py
+  ✓ tns.py
+  ✓ liberal.py
+  ✓ salarie.py
+
+▸ Scope : strategy/  (ne peut pas importer : ui)
+  ✓ scenarios.py
+  ✓ receptacles.py
+  ✓ perin.py
+  ✓ synthese.py
+  ✓ assimile.py
+  ✓ comparateur.py
+  ✓ tns.py
+  ✓ comparateur_regimes.py
+  ✓ liberal.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ 16 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── baseline_tests.py compare (504 tests) ──
+================================================================================
+  COMPARAISON ÉTAT ACTUEL vs BASELINE
+================================================================================
+
+Baseline figée le : 2026-05-19T00:57:17.576661
+Version doctrine baseline : v1.0.1
+Hash global baseline : 8863991f27f67847
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+── test_backward_compat_imports.py ──
+================================================================================
+  TESTS RÉTROCOMPATIBILITÉ — Imports modules-ponts + nouvelle structure
+================================================================================
+
+  ✓ moteur_tns: Profil                                      
+  ✓ moteur_tns: SITUATIONS_PARTICULIERES                    
+  ✓ moteur_tns: constantes                                  
+  ✓ moteur_tns: calcul_ir_foyer + tmi                       
+  ✓ moteur_tns: calcul_module_tns + ResultatTNS             
+  ✓ moteur_tns: import * via __all__                        
+  ✓ moteur_liberal: calcul_module_bnc                       
+  ✓ moteur_salarie: calcul_module_salarie                   
+  ✓ moteur: arbitrage_complet                               
+  ✓ moteur_comparateur: calcul_comparateur                  
+  ✓ moteur_synthese: calcul_synthese                        
+  ✓ moteur_scenarios: calcul_comparaison                    
+  ✓ moteur_perin: calcul_perin_mutualise                    
+  ✓ export_pdf: imports + NIVEAU_COULEURS_PDF               
+  ✓ admin_parametres: construire_catalogue                  
+  ✓ utils_ui: format_eur + NIVEAU_COULEURS                  
+  ✓ doctrine: alias DECLARATIF transitoire                  
+  ✓ NEW core.profil: Profil + PASS_2026                     
+  ✓ NEW core.ir_foyer: calcul_ir_foyer                      
+  ✓ NEW core.projection: projection_5_ans                   
+  ✓ NEW regime.tns: calcul_module_tns                       
+  ✓ NEW regime.liberal: BNC + SEL                           
+  ✓ NEW regime.salarie: calcul_module_salarie               
+  ✓ NEW regime.assimile: helpers IR + FS                    
+  ✓ NEW strategy.assimile: arbitrage_complet                
+  ✓ NEW strategy.comparateur: calcul_comparateur            
+  ✓ NEW strategy.synthese: calcul_synthese                  
+  ✓ NEW strategy.scenarios: calcul_comparaison              
+  ✓ NEW strategy.perin: calcul_perin_mutualise              
+  ✓ NEW ui.utils: format_eur + NIVEAU_COULEURS              
+  ✓ NEW ui.pdf_export: NIVEAU_COULEURS_PDF                  
+  ✓ NEW ui.admin: construire_catalogue + DOCTRINE_OFFICIELLE 
+  ✓ moteur (pont): alias _privés                            
+  ✓ moteur (pont): constantes FS_*                          
+
+━━━ RÉSULTAT ━━━
+  OK    : 34/34
+  KO    : 0
+
+  ✓ Tous les imports rétrocompatibles fonctionnent
+
+── test_strategy_tns.py ──
+==========================================================================================
+  CAS A — SARL gérance maj., capital 100k€, bénéfice 200k€, marié 2 parts
+==========================================================================================
+  ✓ T1: rém dominante (rém > 5x div)                        obtenu=True
+  ✓ T2: div ≤ seuil 10%                                     obtenu=True
+  ✓ T3: PERIN = plafond individuel                          obtenu=True
+  ✓ T3: div ≤ seuil 10%                                     obtenu=True
+  ✓ T4: net immédiat = rém seule (pas d'agrégation)         obtenu=True
+  ✓ T4: aucune distribution dividendes                      obtenu=True
+  ✓ T4: bénéfice retenu > 0                                 obtenu=True
+  ✓ Cas A: pas d'alerte T1                                  obtenu=True
+  ✓ Cas A: pas d'alerte T2                                  obtenu=True
+  ✓ Cas A: pas d'alerte T3                                  obtenu=True
+  ✓ Cas A: T4 a son alerte de non-disponibilité             obtenu=True
+
+  Résultat : 11/11
+
+==========================================================================================
+  CAS B — Capital faible 5k€, bénéfice 200k€ → 2 alertes T2 attendues
+==========================================================================================
+  ✓ T2: 2 alertes attendues (capital faible + ratio marginal) obtenu=2
+  ✓ T2: alerte capital mentionne le seuil                   obtenu=True
+  ✓ T2: alerte ratio mentionne le pourcentage               obtenu=True
+  ✓ T2: seuil 10% = 500€                                    obtenu=500.0
+  ✓ T2: div ≤ seuil malgré capital faible                   obtenu=True
+
+  Résultat : 5/5
+
+==========================================================================================
+  CAS C — Capital 200k€, bénéfice 5M€ → 1 alerte T2 (ratio marginal)
+==========================================================================================
+  ✓ T2: 1 alerte (ratio marginal seul)                      obtenu=1
+  ✓ T2: capital >= 10k donc pas d'alerte capital            obtenu=True
+  ✓ T2: alerte ratio présente                               obtenu=True
+  ✓ T2: seuil 10% = 20k€                                    obtenu=20000.0
+
+  Résultat : 4/4
+
+==========================================================================================
+  CAS D — Célibataire : pas de mutualisation PERIN (plafond individuel seul)
+==========================================================================================
+  ✓ T3: versement PERIN = plafond individuel                obtenu=0.0
+  ✓ T3: dividendes ≤ seuil 10%                              obtenu=True
+  ✓ T3: économie IR PERIN > 0                               obtenu=True
+
+  Résultat : 3/3
+
+==========================================================================================
+  TEST STRUCTUREL — Règle 5 : INTERDICTION agrégation T4
+==========================================================================================
+  ✓ Pas de champ d'agrégation 'total_brut'                       obtenu=True
+  ✓ Pas de champ d'agrégation 'net_total'                        obtenu=True
+  ✓ Pas de champ d'agrégation 'somme_indicateurs'                obtenu=True
+  ✓ Pas de champ d'agrégation 'valeur_totale'                    obtenu=True
+  ✓ Pas de champ d'agrégation 'patrimoine_total'                 obtenu=True
+  ✓ T4 bénéfice 100k: net immédiat == net rém                    obtenu=True
+  ✓ T4 bénéfice 200k: net immédiat == net rém                    obtenu=True
+  ✓ T4 bénéfice 500k: net immédiat == net rém                    obtenu=True
+  ✓ T4 bénéfice 1000k: net immédiat == net rém                   obtenu=True
+  ✓ T4 standard: benefice_retenu_societe > 0                     obtenu=True
+  ✓ T4 alerte non-disponibilité présente                         obtenu=True
+
+  Résultat : 11/11
+
+==========================================================================================
+  SYNTHÈSE TESTS STRATEGY TNS
+==========================================================================================
+  Cas A (standard)                 : 11/11
+  Cas B (capital faible, 2 alertes): 5/5
+  Cas C (ratio marginal seul)      : 4/4
+  Cas D (célibataire, PERIN seul)  : 3/3
+  Test structurel non-agrégation T4: 11/11
+
+  TOTAL : 34/34
+
+── test_strategy_liberal.py ──
+==========================================================================================
+  CAS A — BNC standard : recettes 150k, frais 30k, marié 2 parts
+==========================================================================================
+  ✓ L1: structure = BNC                                     obtenu=BNC
+  ✓ L1: recettes = recettes_bnc                             obtenu=150000
+  ✓ L1: bénéfice brut = recettes - frais                    obtenu=120000
+  ✓ L1: pas d'IS (BNC sans société)                         obtenu=0.0
+  ✓ L1: pas de dividendes                                   obtenu=0.0
+  ✓ L1: net dirigeant > 0                                   obtenu=True
+  ✓ L2: structure = BNC (même)                              obtenu=BNC
+  ✓ L2: versement PERIN > 0                                 obtenu=True
+  ✓ L2: économie IR > 0                                     obtenu=True
+  ✓ L2: net >= L1 (PERIN apporte un gain)                   obtenu=True
+  ✓ L2 = L1 + économie PERIN                                obtenu=60928.020000000004
+
+  Résultat : 11/11
+
+==========================================================================================
+  CAS B — SELARL : recettes 300k, frais 50k, rém SEL 80k (gérant TNS)
+==========================================================================================
+  ✓ L3 SELARL: structure                                    obtenu=SEL-SELARL
+  ✓ L3 SELARL: cotisations = 45% × rém                      obtenu=36000.0
+  ✓ L3 SELARL: bénéfice avant IS                            obtenu=134000.0
+  ✓ L3 SELARL: IS > 0                                       obtenu=True
+  ✓ L3 SELARL: dividendes = bénéfice - IS                   obtenu=104750.0
+  ✓ L3 SELARL: alerte BNC/SEL présente                      obtenu=True
+  ✓ L3 SELARL: mention rétention v2 présente                obtenu=True
+  ✓ L3 SELARL: 2 alertes (BNC/SEL + rétention)              obtenu=2
+
+  Résultat : 8/8
+
+==========================================================================================
+  CAS C — SELAS : recettes 300k, frais 50k, rém SEL 80k (président Assimilé)
+==========================================================================================
+  ✓ L3 SELAS: structure                                     obtenu=SEL-SELAS
+  ✓ L3 SELAS: cotisations patronales = 42% × rém            obtenu=33600.0
+  ✓ L3 SELAS: cotisations ≠ SELARL (45%)                    obtenu=True
+  ✓ L3 SELAS: net rémunération > 0                          obtenu=True
+  ✓ L3 SELAS: dividendes au PFU > 0                         obtenu=True
+
+  Résultat : 5/5
+
+==========================================================================================
+  CAS D — Comparabilité L1 vs L3 sur MÊME CA (Option B validée)
+==========================================================================================
+  ✓ L1.recettes = L2.recettes                               obtenu=300000
+  ✓ L1.recettes = L3.recettes                               obtenu=300000
+  ✓ L1.recettes = L4.recettes                               obtenu=300000
+  ✓ L4 net dirigeant = L3 net dirigeant                     obtenu=99330.32
+  ✓ L4 IS = L3 IS                                           obtenu=29250.0
+  ✓ L4: 3 alertes (L3 alertes + v2)                         obtenu=3
+  ✓ L4: alerte L4 v2 présente                               obtenu=True
+
+  Résultat : 7/7
+
+==========================================================================================
+  TESTS GARDE-FOUS méthodologiques
+==========================================================================================
+  ✓ forme_sel rejette valeurs invalides                          obtenu=True
+  ✓ FORMES_SEL_VALIDES = ('SELARL', 'SELAS')                     obtenu=('SELARL', 'SELAS')
+  ✓ ResultatArbitrageLib: pas de champ 'recommandee'             obtenu=True
+  ✓ ResultatArbitrageLib: champ 'plus_efficace_fiscalement' présent obtenu=True
+  ✓ ResultatArbitrageLib: champ 'avertissement_bnc_sel' présent  obtenu=True
+  ✓ Profil BNC: avertissement BNC/SEL renseigné                  obtenu=True
+  ✓ Profil SELARL: avertissement BNC/SEL renseigné               obtenu=True
+  ✓ Profil SELAS: avertissement BNC/SEL renseigné                obtenu=True
+  ✓ L3: alerte BNC/SEL présente                                  obtenu=True
+  ✓ L4: alerte BNC/SEL présente                                  obtenu=True
+  ✓ L1: pas d'alerte BNC/SEL (BNC pur)                           obtenu=True
+  ✓ L2: pas d'alerte BNC/SEL (BNC pur)                           obtenu=True
+
+  Résultat : 12/12
+
+==========================================================================================
+  SYNTHÈSE TESTS STRATEGY LIBÉRAL
+==========================================================================================
+  Cas A (BNC standard L1/L2)        : 11/11
+  Cas B (SELARL, gérant TNS)        : 8/8
+  Cas C (SELAS, président Assimilé) : 5/5
+  Cas D (Comparabilité L1 vs L3)    : 7/7
+  Garde-fous méthodologiques        : 12/12
+
+  TOTAL : 43/43
+
+── test_etape4.py ──
+==========================================================================================
+  4a — TESTS ROUTEUR calcul_synthese() multi-régimes
+==========================================================================================
+  ✓ Assimilé : stratégie retenue = D                             obtenu=D
+  ✓ Assimilé : net = 78 423,80 (parité v19)                      obtenu=78423.80228067338
+  ✓ Assimilé : ROI calculé                                       obtenu=True
+  ✓ TNS : stratégie retenue ∈ T1-T4                              obtenu=True
+  ✓ TNS : net dirigeant > 0                                      obtenu=True
+  ✓ TNS : checklist contient les alertes régime                  obtenu=True
+  ✓ TNS T4 : stratégie retenue = T4                              obtenu=T4
+  ✓ TNS T4 : alerte explicite de non-disponibilité               obtenu=True
+  ✓ Libéral : stratégie ∈ L1-L4                                  obtenu=True
+  ✓ Libéral L3 : alerte BNC/SEL remontée                         obtenu=True
+  ✓ Salarié : stratégie = 'Salarié (référence)'                  obtenu=Salarié (référence)
+  ✓ Salarié : net > 0                                            obtenu=True
+
+  Résultat 4a : 12/12
+
+==========================================================================================
+  4b — TESTS Comparateur de régimes
+==========================================================================================
+  ✓ 4 lignes (Assimilé/TNS/Libéral/Salarié)                      obtenu=4
+  ✓ Disclaimer changement régime présent                         obtenu=True
+  ✓ Disclaimer comparabilité présent                             obtenu=True
+  ✓ Note radar intra-régime présente                             obtenu=True
+  ✓ Ligne 1 = Assimilé                                           obtenu=Assimilé salarié
+  ✓ Ligne 2 = TNS                                                obtenu=TNS
+  ✓ Ligne 3 = Libéral (selon stratégie)                          obtenu=True
+  ✓ Ligne 4 = Salarié (référence)                                obtenu=Salarié (référence)
+  ✓ Assimilé net > 0                                             obtenu=True
+  ✓ TNS net > 0                                                  obtenu=True
+  ✓ Libéral net > 0                                              obtenu=True
+  ✓ Salarié net > 0                                              obtenu=True
+  ✓ Assimilé : grandeur = Coût société                           obtenu=True
+  ✓ TNS : grandeur = Bénéfice IS                                 obtenu=True
+  ✓ Libéral : grandeur = Recettes BNC                            obtenu=True
+  ✓ Salarié : grandeur = Salaire brut                            obtenu=True
+  ✓ meilleur_net est un string                                   obtenu=True
+
+  Résultat 4b : 17/17
+
+==========================================================================================
+  Tests garde-fous méthodologiques (Étape 4)
+==========================================================================================
+  ✓ ResultatComparateurRegimes : pas de champ 'regime_recommande' obtenu=True
+  ✓ ResultatComparateurRegimes : pas de champ 'recommandation'   obtenu=True
+  ✓ ResultatComparateurRegimes : champ 'meilleur_net' présent    obtenu=True
+  ✓ LigneRegime : champ 'benefice_retenu_societe' séparé         obtenu=True
+  ✓ LigneRegime : pas de champ 'net_total_avec_retenu'           obtenu=True
+  ✓ LigneRegime : pas de champ 'patrimoine_total'                obtenu=True
+  ✓ T4 non recommandée par défaut sur ce profil (OK)             obtenu=True
+  ✓ Libéral L3 : alerte BNC/SEL                                  obtenu=True
+  ✓ Aucune note Libéral n'a de formulation 'recommandée' positive obtenu=True
+
+  Résultat garde-fous : 9/9
+
+==========================================================================================
+  SYNTHÈSE TESTS ÉTAPE 4
+==========================================================================================
+  4a — Synthèse multi-régimes        : 12/12
+  4b — Comparateur de régimes        : 17/17
+  Garde-fous méthodologiques         : 9/9
+
+  TOTAL : 38/38
+
+── test_etape5.py ──
+==========================================================================================
+  5.A — Tests fonction unique regime_effectif_receptacles()
+==========================================================================================
+  ✓ SAS → Assimilé                                          obtenu=Assimilé salarié
+  ✓ SARL minoritaire → Assimilé                             obtenu=Assimilé salarié
+  ✓ SARL majoritaire / EURL → TNS                           obtenu=TNS
+  ✓ EI / EI à l'IS → TNS                                    obtenu=TNS
+  ✓ Profession libérale (BNC) → Libéral BNC                 obtenu=Libéral BNC
+  ✓ SELARL → TNS (règle critique)                           obtenu=TNS
+  ✓ SELAS → Assimilé (règle critique)                       obtenu=Assimilé salarié
+
+  Résultat 5.A : 7/7
+
+==========================================================================================
+  5.B — Tests matrice §5 (Cadre méthodologique v1.0.1)
+==========================================================================================
+  ✓ PERIN Assimilé : accessible                             obtenu=True
+  ✓ PERIN TNS : accessible                                  obtenu=True
+  ✓ PERIN BNC : accessible                                  obtenu=True
+  ✓ PERIN SELARL : accessible                               obtenu=True
+  ✓ PERIN SELAS : accessible                                obtenu=True
+  ✓ PEE Assimilé : accessible                               obtenu=True
+  ✓ PEE SELAS : accessible                                  obtenu=True
+  ✓ PEE TNS : fermé                                         obtenu=False
+  ✓ PEE BNC : fermé                                         obtenu=False
+  ✓ PEE SELARL : fermé                                      obtenu=False
+  ✓ PERECO Assimilé : accessible                            obtenu=True
+  ✓ PERECO SELAS : accessible                               obtenu=True
+  ✓ PERECO TNS : fermé                                      obtenu=False
+  ✓ PERECO BNC : fermé                                      obtenu=False
+  ✓ PERECO SELARL : fermé                                   obtenu=False
+  ✓ PERO Assimilé : accessible                              obtenu=True
+  ✓ PERO SELAS : accessible                                 obtenu=True
+  ✓ PERO TNS : fermé                                        obtenu=False
+  ✓ PERO BNC : fermé                                        obtenu=False
+  ✓ PERO SELARL : fermé                                     obtenu=False
+  ✓ Intéressement Assimilé : accessible                     obtenu=True
+  ✓ Intéressement TNS : fermé                               obtenu=False
+  ✓ Intéressement SELARL : fermé                            obtenu=False
+  ✓ Intéressement SELAS : accessible                        obtenu=True
+  ✓ Participation Assimilé : accessible                     obtenu=True
+  ✓ Participation TNS : fermé                               obtenu=False
+  ✓ Participation SELARL : fermé                            obtenu=False
+  ✓ Participation SELAS : accessible                        obtenu=True
+
+  Résultat 5.B : 28/28
+
+==========================================================================================
+  5.C — Tests filtre intégré dans calcul_comparateur
+==========================================================================================
+  ✓ Assimilé : 0 lignes inaccessibles                       obtenu=0
+  ✓ TNS : 5 lignes inaccessibles                            obtenu=5
+  ✓ SELARL : 5 lignes inaccessibles (= TNS)                 obtenu=5
+  ✓ SELAS : 0 lignes inaccessibles (= Assimilé)             obtenu=0
+  ✓ TNS PERIN (idx 6) : accessible                          obtenu=True
+  ✓ SELARL PERIN (idx 6) : accessible                       obtenu=True
+  ✓ TNS Salaire (idx 0) : accessible                        obtenu=True
+  ✓ TNS Dividendes (idx 1) : accessible                     obtenu=True
+  ✓ TNS PEE (idx 4) : motif non vide                        obtenu=True
+  ✓ TNS PEE motif contient 'TNS'                            obtenu=True
+  ✓ Assimilé toutes lignes : motif vide                     obtenu=True
+  ✓ TNS : top 3 ne contient que des lignes accessibles      obtenu=True
+
+  Résultat 5.C : 12/12
+
+==========================================================================================
+  5.D — Mention Madelin / PER TNS + fonctions utilitaires
+==========================================================================================
+  ✓ mention_madelin() non vide                              obtenu=True
+  ✓ mention_madelin() contient 'Madelin'                    obtenu=True
+  ✓ mention_madelin() contient 'cabinet'                    obtenu=True
+  ✓ mention_madelin() contient 'PERIN reste'                obtenu=True
+  ✓ constante MADELIN_PER_TNS_MENTION exposée               obtenu=True
+  ✓ liste_receptacles_par_regime contient 6 entrées         obtenu=6
+  ✓ liste : PERIN accessible pour TNS                       obtenu=True
+  ✓ liste : PEE inaccessible pour TNS                       obtenu=False
+  ✓ liste : PEE motif non vide pour TNS                     obtenu=True
+  ✓ motif PERIN TNS : None (car accessible)                 obtenu=None
+  ✓ motif PEE TNS : chaîne non vide                         obtenu=True
+
+  Résultat 5.D : 11/11
+
+==========================================================================================
+  5.E — Garde-fous (unicité règle SELARL/SELAS)
+==========================================================================================
+  ✓ Aucune duplication règle SELARL/SELAS hors modules autorisés obtenu=0
+  ✓ MATRICE_RECEPTACLES : 6 réceptacles modélisés           obtenu={'Participation', 'Intéressement', 'PERIN', 'PERECO', 'PERO', 'PEE'}
+  ✓ Madelin PAS dans MATRICE_RECEPTACLES (hors v1)          obtenu=True
+
+  Résultat 5.E : 3/3
+
+==========================================================================================
+  SYNTHÈSE TESTS ÉTAPE 5
+==========================================================================================
+  5.A — Résolution unique             : 7/7
+  5.B — Matrice §5                    : 28/28
+  5.C — Filtre Comparateur            : 12/12
+  5.D — Mention Madelin + helpers     : 11/11
+  5.E — Garde-fous unicité règle      : 3/3
+
+  TOTAL : 61/61
+
+── test_pdf_render_all_regimes.py ──
+
+Tests PDF — génération sortie dans /tmp/pdf_test_outputs
+
+===============================================================================================
+  6.A — Génération PDF tous régimes (pas d'exception)
+===============================================================================================
+  ✓ assimile: PDF généré sans exception
+  ✓ assimile: magic number %PDF-
+  ✓ assimile: taille > 2 KB (15,197 bytes)
+  ✓ tns: PDF généré sans exception
+  ✓ tns: magic number %PDF-
+  ✓ tns: taille > 2 KB (7,329 bytes)
+  ✓ tns_t4: PDF généré sans exception
+  ✓ tns_t4: magic number %PDF-
+  ✓ tns_t4: taille > 2 KB (8,124 bytes)
+  ✓ liberal_bnc: PDF généré sans exception
+  ✓ liberal_bnc: magic number %PDF-
+  ✓ liberal_bnc: taille > 2 KB (7,998 bytes)
+  ✓ liberal_sel: PDF généré sans exception
+  ✓ liberal_sel: magic number %PDF-
+  ✓ liberal_sel: taille > 2 KB (7,951 bytes)
+  ✓ salarie: PDF généré sans exception
+  ✓ salarie: magic number %PDF-
+  ✓ salarie: taille > 2 KB (5,757 bytes)
+
+  Résultat 6.A : 18/18
+
+===============================================================================================
+  6.B — Aucun vocabulaire 'Déclaratif' résiduel dans les PDF
+===============================================================================================
+  ✓ assimile: pas de 'Déclaratif' dans le texte extrait
+  ✓ liberal_bnc: pas de 'Déclaratif' dans le texte extrait
+  ✓ liberal_sel: pas de 'Déclaratif' dans le texte extrait
+  ✓ salarie: pas de 'Déclaratif' dans le texte extrait
+  ✓ tns: pas de 'Déclaratif' dans le texte extrait
+  ✓ tns_t4: pas de 'Déclaratif' dans le texte extrait
+
+  Résultat 6.B : 6/6
+
+===============================================================================================
+  6.C — Libellés couverture par régime
+===============================================================================================
+  ✓ assimile: contient 'Arbitrage de rémunération'
+  ✓ assimile: contient 'Dirigeant assimilé'
+  ✓ tns: contient 'Arbitrage de rémunération'
+  ✓ tns: contient 'Dirigeant TNS'
+  ✓ liberal_bnc: contient 'Cadrage de structuration'
+  ✓ liberal_bnc: contient 'Profession libérale BNC'
+  ✓ liberal_sel: contient 'Cadrage de structuration'
+  ✓ liberal_sel: contient 'SELARL'
+  ✓ salarie: contient 'Référence comparative'
+  ✓ salarie: contient 'Salarié non-dirigeant'
+
+  Résultat 6.C : 10/10
+
+===============================================================================================
+  6.D — Disclaimers v1.0.1 obligatoires sur toutes les variantes
+===============================================================================================
+  ✓ assimile: primauté cabinet présent
+  ✓ assimile: AMF comparateur présent
+  ✓ assimile: cadrage indicatif présent
+  ✓ liberal_bnc: primauté cabinet présent
+  ✓ liberal_bnc: AMF comparateur présent
+  ✓ liberal_bnc: cadrage indicatif présent
+  ✓ liberal_sel: primauté cabinet présent
+  ✓ liberal_sel: AMF comparateur présent
+  ✓ liberal_sel: cadrage indicatif présent
+  ✓ salarie: primauté cabinet présent
+  ✓ salarie: AMF comparateur présent
+  ✓ salarie: cadrage indicatif présent
+  ✓ tns: primauté cabinet présent
+  ✓ tns: AMF comparateur présent
+  ✓ tns: cadrage indicatif présent
+  ✓ tns_t4: primauté cabinet présent
+  ✓ tns_t4: AMF comparateur présent
+  ✓ tns_t4: cadrage indicatif présent
+
+  Résultat 6.D : 18/18
+
+===============================================================================================
+  6.E — Garde-fous critiques métier
+===============================================================================================
+  ✓ T4: mention 'net immédiat'
+  ✓ T4: mention 'bénéfice retenu en société'
+  ✓ T4: garde-fou 'pas un revenu disponible' affiché
+  ✓ Libéral SEL: alerte 'BNC / SEL' présente
+  ✓ Libéral SEL: mention 'analyse juridique' présente
+  ✓ Libéral SEL: terminologie prudente (niveau de net le plus élevé)
+  ✓ Salarié: mention 'pas d'enveloppe dirigeant à arbitrer'
+
+  Résultat 6.E : 7/7
+
+===============================================================================================
+  6.F — Régime affiché explicitement en couverture
+===============================================================================================
+  ✓ assimile: 'Régime social' = 'Assimilé salarié' affiché
+  ✓ tns: 'Régime social' = 'TNS' affiché
+  ✓ liberal_bnc: 'Régime social' = 'TNS (libéral)' affiché
+  ✓ liberal_sel: 'Régime social' = 'TNS (libéral)' affiché
+  ✓ salarie: 'Régime social' = 'Assimilé salarié' affiché
+
+  Résultat 6.F : 5/5
+
+===============================================================================================
+  SYNTHÈSE TESTS PDF MULTI-RÉGIMES (ÉTAPE 6)
+===============================================================================================
+  6.A — Génération PDF tous régimes        : 18/18
+  6.B — Aucun 'Déclaratif' résiduel        : 6/6
+  6.C — Libellés couverture validés        : 10/10
+  6.D — Disclaimers v1.0.1 obligatoires    : 18/18
+  6.E — Garde-fous critiques métier        : 7/7
+  6.F — Régime affiché explicitement       : 5/5
+
+  TOTAL : 64/64
+  PDF générés sauvegardés dans : /tmp/pdf_test_outputs/
+
+── test_no_declaratif_residual.py ──
+===============================================================================================
+  TEST 1 — GREP STRUCTUREL : Aucune occurrence 'Déclaratif' hors whitelist
+===============================================================================================
+
+  Occurrences totales : 4
+  Violations détectées : 0
+
+  Détail des occurrences :
+    ✓ autorisée   ui/pdf_export.py:74
+                   "Déclaratif": "Conformité renforcée",
+    ✓ autorisée   ui/pdf_export.py:88
+                       niveau: Niveau de confiance, éventuellement legacy ("Déclaratif")
+    ✓ autorisée   ui/pdf_export.py:181
+                       # Normalisation des niveaux legacy ("Déclaratif" → "Conformité renforcée")
+    ✓ autorisée   doctrine.py:39
+                           "primauté cabinet, et renommage du niveau de précision « Déclaratif » "
+
+  ✓ Aucune violation : 'Déclaratif' n'apparaît qu'aux emplacements autorisés
+
+===============================================================================================
+  TEST 2 — NIVEAU_COULEURS_PDF ne contient PLUS 'Déclaratif'
+===============================================================================================
+
+  NIVEAU_COULEURS_PDF.keys() : ['Avancé', 'Cadrage', 'Conformité renforcée', 'Indicatif']
+  'Déclaratif' présent ? NON
+  _ALIASES_NIVEAUX['Déclaratif'] = 'Conformité renforcée' ? OUI
+
+  ✓ Migration propre : dict public purgé, alias interne en place
+
+===============================================================================================
+  TEST 3 — Aucun PDF généré ne contient 'Déclaratif'
+===============================================================================================
+
+  ✓ assimile: aucun 'Déclaratif' dans le PDF (15,237 bytes)
+  ✓ tns: aucun 'Déclaratif' dans le PDF (15,334 bytes)
+  ✓ liberal_bnc: aucun 'Déclaratif' dans le PDF (15,237 bytes)
+  ✓ liberal_sel: aucun 'Déclaratif' dans le PDF (15,222 bytes)
+  ✓ salarie: aucun 'Déclaratif' dans le PDF (5,690 bytes)
+  ✓ LEGACY_declaratif: aucun 'Déclaratif' dans le PDF (15,334 bytes)
+
+  Résultat : 6/6
+
+===============================================================================================
+  SYNTHÈSE — GARDE-FOU SÉMANTIQUE 'Déclaratif'
+===============================================================================================
+  Test 1 — Grep structurel             : ✓  (1/1)
+  Test 2 — NIVEAU_COULEURS_PDF purgé   : ✓  (1/1)
+  Test 3 — Aucun PDF contient le terme : ✓  (6/6)
+
+  TOTAL : 8/8
+
+  ✓ Dette sémantique 'Déclaratif' totalement purgée du livrable.
+
+── test_terminologie_freeze.py ──
+===============================================================================================
+  AUDIT TERMINOLOGIQUE — Phase B.2 freeze
+===============================================================================================
+
+  → optimisation : 1 occurrences trouvées
+     - Autorisées : 1
+     - Violations : 0
+
+  → recommandée_positive : 33 occurrences trouvées
+     - Autorisées : 33
+     - Violations : 0
+
+===============================================================================================
+  SYNTHÈSE AUDIT TERMINOLOGIQUE
+===============================================================================================
+  ✓ optimisation                    occurrences=1, violations=0
+  ✓ recommandée_positive            occurrences=33, violations=0
+
+  ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+    soit dans des disclaimers négatifs, soit dans des docstrings de
+    garde-fou, soit dans des contextes techniques neutres.
+

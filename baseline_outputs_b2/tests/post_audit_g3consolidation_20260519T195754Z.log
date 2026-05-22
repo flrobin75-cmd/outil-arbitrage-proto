@@ -1,0 +1,40 @@
+════════════════════════════════════════════════
+  MODE_AUDIT v1.3 — Re-validation finale post-consolidation doc
+  Horodatage UTC : 20260519T195754Z
+════════════════════════════════════════════════
+
+── Baseline + Architecture + Spec ──
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+  ✓ 17 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+  AUDIT_SPEC_VERSION = 1.1.0
+
+── 504 baseline ──
+  Modules conformes    : 7/7
+  Régressions          : 0
+
+── 8 suites B.2 ──
+  test_backward_compat_imports.py  →    KO    : 0
+  test_strategy_tns.py  →    Test structurel non-agrégation T4: 11/11
+  test_strategy_liberal.py  →    Garde-fous méthodologiques        : 12/12
+  test_etape4.py  →    Garde-fous méthodologiques         : 9/9
+  test_etape5.py  →    5.E — Garde-fous unicité règle      : 3/3
+  test_pdf_render_all_regimes.py  →  
+  test_no_declaratif_residual.py  →    TOTAL : 8/8
+  test_terminologie_freeze.py  →    ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+
+── 7 suites MODE_AUDIT ──
+  test_mode_audit_tns.py  →    ✓ Tous les tests MODE_AUDIT TNS passent
+  test_mode_audit_liberal.py  →    ✓ Tous les tests MODE_AUDIT Libéral (BNC + SEL) passent
+  test_mode_audit_salarie.py  →    ✓ Tous les tests MODE_AUDIT Salarié passent
+  test_mode_audit_assimile.py  →    ✓ Tous les tests MODE_AUDIT Assimilé passent (G2b)
+  test_mode_audit_strategy_assimile.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Assimilé passent (G3a)
+  test_mode_audit_strategy_tns.py  →    ✓ Tous les tests MODE_AUDIT Strategy/TNS passent (G3b)
+  test_mode_audit_strategy_liberal.py  →    ✓ Tous les tests MODE_AUDIT Strategy/Libéral passent (G3c)
+
+── 3 audits sémantiques ──
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+    garde-fou, soit dans des contextes techniques neutres.

@@ -1,0 +1,47 @@
+{
+  "accessible": true,
+  "cas_nom": "hybride_perin_pee",
+  "enveloppe": "PERECO",
+  "input_flux_disponible": 5000.0,
+  "input_horizons": [
+    5,
+    10,
+    20
+  ],
+  "lignes_par_horizon": [
+    {
+      "capital_projete": 9139.42,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 1700.27,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 5,
+      "valeur_nette": 7439.15
+    },
+    {
+      "capital_projete": 10090.66,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 1985.64,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 10,
+      "valeur_nette": 8105.02
+    },
+    {
+      "capital_projete": 12300.46,
+      "cout_entreprise": 3844.8,
+      "disponibilite": "Bloqué jusqu'à la retraite (sauf cas légaux : invalidité, surendettement, acquisition résidence principale).",
+      "economie_fiscale_immediate": 1441.8,
+      "effort_reel": 3364.2,
+      "fiscalite_sortie": 2648.58,
+      "flux_entrant_brut": 4806.0,
+      "horizon_annees": 20,
+      "valeur_nette": 9651.88
+    }
+  ],
+  "motif_inaccessibilite": ""
+}

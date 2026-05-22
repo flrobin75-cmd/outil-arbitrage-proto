@@ -1,0 +1,64 @@
+════════════════════════════════════════════════
+  MODE_AUDIT v1.2 — Re-validation finale globale (G2c)
+  Horodatage UTC : 20260519T163419Z
+  Hash baseline attendu : 8863991f27f67847
+════════════════════════════════════════════════
+
+── Baseline numérique ──
+  Divergences        : 0
+
+  ✓ AUCUNE RÉGRESSION DÉTECTÉE — refactoring sécurisé
+
+── Architecture ──
+  ✓ 17 fichiers scannés — règles d'import respectées
+  Architecture canonique : core ← regime ← strategy ← ui ← app
+
+── 504 baseline ──
+
+  TNS                            ✓ 114/114
+  Libéral                        ✓ 96/96
+  Salarié                        ✓ 84/84
+  Comparateur Option 2           ✓ 64/64
+  Synthèse                       ✓ 30/30
+  Scénarios A vs B               ✓ 88/88
+  PERIN mutualisé                ✓ 28/28
+
+━━━ RÉSULTAT COMPARAISON ━━━
+  Modules conformes    : 7/7
+  Régressions          : 0
+  Erreurs exécution    : 0
+
+  ✓ AUCUNE RÉGRESSION — refactoring sécurisé
+
+── Parité Excel ──
+
+  TOTAL : 114/114 cellules en parité exacte
+
+  TOTAL : 96/96 cellules en parité
+
+  TOTAL : 84/84 cellules en parité
+
+── 8 suites B.2 ──
+  test_backward_compat_imports.py  →   ✓ Aucun module-pont ne subsiste — B.3 finalisée propre
+  test_strategy_tns.py  →   TOTAL : 34/34
+  test_strategy_liberal.py  →   TOTAL : 43/43
+  test_etape4.py  →   TOTAL : 38/38
+  test_etape5.py  →   TOTAL : 61/61
+  test_pdf_render_all_regimes.py  →   TOTAL : 64/64
+  test_no_declaratif_residual.py  →   TOTAL : 8/8
+  test_terminologie_freeze.py  →   ✓ AUCUNE VIOLATION TERMINOLOGIQUE — toutes les occurrences sont
+
+── 4 suites MODE_AUDIT ──
+===============================================================================================
+  ✓ Tous les tests MODE_AUDIT TNS passent
+===============================================================================================
+  ✓ Tous les tests MODE_AUDIT Libéral (BNC + SEL) passent
+===============================================================================================
+  ✓ Tous les tests MODE_AUDIT Salarié passent
+===============================================================================================
+  ✓ Tous les tests MODE_AUDIT Assimilé passent (G2b)
+
+── 3 audits sémantiques ──
+  ✓ AUCUNE VIOLATION sur les 9 patterns scannés
+  ✓ AUCUNE VIOLATION sur les 4 patterns scannés
+    garde-fou, soit dans des contextes techniques neutres.

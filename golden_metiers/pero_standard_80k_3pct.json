@@ -1,0 +1,48 @@
+{
+  "accessible": true,
+  "cas_nom": "standard_80k_3pct",
+  "enveloppe": "PERO",
+  "input_horizons": [
+    5,
+    10,
+    20
+  ],
+  "input_salaire_brut_annuel": 80000.0,
+  "input_taux_cotisation_pero": 0.03,
+  "input_tmi": 0.3,
+  "lignes_par_horizon": [
+    {
+      "capital_projete": 12489.7,
+      "cout_entreprise": 2784.0,
+      "disponibilite": "Bloqué jusqu'à la retraite ; cas légaux de déblocage anticipé hors acquisition RP.",
+      "economie_fiscale_immediate": 720.0,
+      "effort_reel": -487.2,
+      "fiscalite_sortie": 146.91,
+      "flux_entrant_brut": 232.8,
+      "horizon_annees": 5,
+      "valeur_nette": 12342.79
+    },
+    {
+      "capital_projete": 26279.33,
+      "cout_entreprise": 2784.0,
+      "disponibilite": "Bloqué jusqu'à la retraite ; cas légaux de déblocage anticipé hors acquisition RP.",
+      "economie_fiscale_immediate": 720.0,
+      "effort_reel": -487.2,
+      "fiscalite_sortie": 683.8,
+      "flux_entrant_brut": 232.8,
+      "horizon_annees": 10,
+      "valeur_nette": 25595.53
+    },
+    {
+      "capital_projete": 58313.69,
+      "cout_entreprise": 2784.0,
+      "disponibilite": "Bloqué jusqu'à la retraite ; cas légaux de déblocage anticipé hors acquisition RP.",
+      "economie_fiscale_immediate": 720.0,
+      "effort_reel": -487.2,
+      "fiscalite_sortie": 3094.11,
+      "flux_entrant_brut": 232.8,
+      "horizon_annees": 20,
+      "valeur_nette": 55219.58
+    }
+  ]
+}
