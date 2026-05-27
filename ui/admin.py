@@ -64,11 +64,13 @@ def construire_catalogue() -> dict:
         "FS_PERO": ParametreEditable(
             cle="FS_PERO",
             libelle="Forfait social PERO",
-            valeur_actuelle=0.08, valeur_doctrine_officielle=0.08,
+            valeur_actuelle=0.16, valeur_doctrine_officielle=0.16,
             unite="%", categorie="Forfaits sociaux",
-            source_legale="Loi PACTE 2019, CSS L137-15-1",
-            note="Taux retenu pour les versements employeur sur PERO. "
-                 "Réservé aux salariés et assimilés salariés.",
+            source_legale="CSS L. 137-16 al. 3 (PACTE 2019)",
+            note="Taux réduit 16 % sous condition de gestion pilotée par défaut (PACTE 2019), "
+                 "satisfaite par construction sur PERO modernes post-PACTE. "
+                 "Taux standard 20 % si la condition n'est pas remplie. "
+                 "Versements employeur sur PERO, réservé aux salariés et assimilés.",
         ),
         "FS_PERECO": ParametreEditable(
             cle="FS_PERECO",
@@ -92,7 +94,7 @@ def construire_catalogue() -> dict:
             libelle="Plafond abondement PERECO (annuel)",
             valeur_actuelle=7_689.60, valeur_doctrine_officielle=7_689.60,
             unite="€", categorie="Plafonds épargne",
-            source_legale="CSS L3334-8 (16 % du PASS)",
+            source_legale="CMF L. 224-13 (16 % du PASS)",
             note="Plafond annuel d'abondement employeur PERECO.",
         ),
         "PLAF_CUMUL_ABONDEMENTS": ParametreEditable(

@@ -90,6 +90,15 @@ PAGES = {
     "🔧 Administration (expert)": "admin",
 }
 
+# ============================================================
+# ADMIN MODE - masquage conditionnel des pages admin
+# Workaround court terme avant streamlit-authenticator (J+1)
+# ============================================================
+ADMIN_PASSWORD = st.secrets.get("ADMIN_PASSWORD", "")
+PAGES_ADMIN_ONLY_KEYS = {"parametres", "admin"}
+if "is_admin" not in st.session_state:
+    st.session_state["is_admin"] = False
+
 
 def init_session_state():
     """Initialise les valeurs en session_state avec defaults."""
@@ -160,9 +169,15 @@ with st.sidebar:
     st.markdown("### 📊 Outil d'arbitrage")
     st.caption(f"Phase A v{DOCTRINE_VERSION} · MAJ réglementaire {DOCTRINE_DATE}")
     
-    page_label = st.radio("Navigation", list(PAGES.keys()),
+    # Filtrage du dict PAGES selon le statut admin
+    if st.session_state.get("is_admin", False):
+        PAGES_VISIBLES = PAGES
+    else:
+        PAGES_VISIBLES = {k: v for k, v in PAGES.items()
+                          if v not in PAGES_ADMIN_ONLY_KEYS}
+    page_label = st.radio("Navigation", list(PAGES_VISIBLES.keys()),
                           label_visibility="collapsed")
-    page = PAGES[page_label]
+    page = PAGES_VISIBLES[page_label]
     
     st.divider()
     st.markdown("### Profil client")
@@ -224,6 +239,25 @@ with st.sidebar:
         "Bénéfice IS de la société (€/an)",
         min_value=0, value=int(st.session_state["benefice_is"]), step=10000,
     )
+
+    # Toggle admin discret en bas de sidebar
+    st.divider()
+    with st.expander("🔐 Acces admin", expanded=False):
+        if not st.session_state.get("is_admin", False):
+            pwd = st.text_input("Mot de passe", type="password",
+                                key="admin_pwd_input")
+            if pwd:
+                if ADMIN_PASSWORD and pwd == ADMIN_PASSWORD:
+                    st.session_state["is_admin"] = True
+                    st.success("Mode admin active.")
+                    st.rerun()
+                else:
+                    st.error("Mot de passe incorrect.")
+        else:
+            st.success("Mode admin actif.")
+            if st.button("Desactiver", key="admin_logout"):
+                st.session_state["is_admin"] = False
+                st.rerun()
 
 
 # Profil construit à partir du session_state
