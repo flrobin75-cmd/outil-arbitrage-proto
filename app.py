@@ -95,6 +95,7 @@ PAGES = {
 # Workaround court terme avant streamlit-authenticator (J+1)
 # ============================================================
 ADMIN_PASSWORD = st.secrets.get("ADMIN_PASSWORD", "")
+st.write("DEBUG SECRETS:", {"defini": bool(ADMIN_PASSWORD), "longueur": len(ADMIN_PASSWORD), "secrets_keys": list(st.secrets.keys()) if hasattr(st, "secrets") else "no_secrets"})
 PAGES_ADMIN_ONLY_KEYS = {"parametres", "admin"}
 if "is_admin" not in st.session_state:
     st.session_state["is_admin"] = False
