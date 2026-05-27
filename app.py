@@ -73,6 +73,20 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# Masquage des elements UI Streamlit pour phase pilote
+st.markdown("""
+<style>
+[data-testid="stToolbar"] {visibility: hidden;}
+header[data-testid="stHeader"] {background: transparent;}
+footer {visibility: hidden;}
+#MainMenu {visibility: hidden;}
+.viewerBadge_container__1QSob {visibility: hidden;}
+.styles_viewerBadge__1yB5_ {visibility: hidden;}
+.viewerBadge_link__1S137 {visibility: hidden;}
+div[data-testid="stDecoration"] {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 
 # ============================================================
 # NAVIGATION
